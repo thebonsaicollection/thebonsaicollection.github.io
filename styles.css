@@ -1,0 +1,109 @@
+/* Fondo azul profundo para simular el espacio */
+body {
+    background-color: #000033;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff; /* Color de texto blanco para una mejor legibilidad */
+}
+
+/* Título centrado */
+h1 {
+    font-size: 2.5rem; /* Tamaño de fuente más grande */
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente en la web */
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Limita el ancho del contenido para una mejor legibilidad */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo ligeramente transparente */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Sutil sombra para el contenedor */
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 20px;
+}
+
+/* Chat Messages */
+.chat-messages {
+    padding: 10px;
+    max-height: 500px; /* Limita la altura del área de mensajes para hacerlo desplazable */
+    overflow-y: auto;
+}
+
+/* Mensajes del usuario (derecha) */
+.user-message {
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 12px; /* Más espacio alrededor del mensaje */
+    margin: 10px 0;
+    align-self: flex-end;
+}
+
+/* Mensajes del bot (izquierda) */
+.bot-message {
+    background-color: #e0e0e0;
+    border-radius: 12px; /* Bordes redondeados */
+    color: #000;
+    padding: 12px; /* Más espacio alrededor del mensaje */
+    margin: 10px 0;
+    align-self: flex-start;
+}
+
+/* Botones */
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 12px 24px; /* Botones más grandes */
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.2s ease; /* Efecto de transición suave al pasar el mouse */
+}
+
+/* Cambia el color del botón al pasar el mouse */
+button:hover {
+    background-color: #2674a7;
+}
+
+/* Alinea el botón al centro */
+button.centered-button {
+    align-self: center;
+}
+
+/* Botones de categoría */
+button.category-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 12px 24px; /* Botones más grandes */
+    cursor: pointer;
+    margin: 10px 0;
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Botones de subcategoría */
+button.subcategory-button {
+    background-color: #ff6600; /* Cambiado a un color azul más vibrante */
+    color: #fff; /* Texto en color blanco para mayor contraste */
+    border: none;
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 12px 24px; /* Botones más grandes */
+    cursor: pointer;
+    margin: 5px 0;
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+

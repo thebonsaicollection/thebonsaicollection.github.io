@@ -1,0 +1,56 @@
+{
+    "problema_global": {
+        "titulo": "Problema Global",
+        "contenido": "El siglo XXI presenció un problema apremiante en la Tierra: la escasez de agua y recursos naturales. El calentamiento global y el agotamiento de recursos llevaron a la humanidad a enfrentar una crisis sin precedentes. La supervivencia del planeta estaba en juego.",
+        "subtemas": [
+            "Escasez de Agua y Recursos",
+            "Calentamiento Global"
+        ],
+        "subtemasData": {
+            "Escasez de Agua y Recursos": {
+                "titulo": "Escasez de Agua y Recursos",
+                "contenido": "Este subtema se enfoca en la disminución de los recursos naturales, particularmente el agua. Explica cómo la escasez de agua afectó a las comunidades en todo el mundo y las soluciones propuestas para abordar este problema."
+            },
+            "Calentamiento Global": {
+                "titulo": "Calentamiento Global",
+                "contenido": "El calentamiento global es un fenómeno climático que resulta en un aumento de la temperatura promedio de la Tierra debido a actividades humanas. Este subtema analiza las causas, impactos y medidas para mitigar el calentamiento global."
+            }
+        }
+    },
+    "creacion_tbc": {
+        "titulo": "Creación de TBC",
+        "contenido": "La nave espacial TBC es el núcleo de nuestro proyecto, diseñada para abordar la crisis global de recursos y cambio climático. Con su avanzado invernadero y tecnología AI, la TBC orbita alrededor de un sol artificial para proporcionar un ecosistema sostenible para la tripulación.",
+        "subtemas": [
+            "Diseño y Características",
+            "Invernadero y AI",
+            "Misiones de Exploración"
+        ]
+    },
+    "recursos_economia": {
+        "titulo": "Recursos y Economía",
+        "contenido": "En la TBC, el recurso más valioso es la energía, utilizada para activar todos los sistemas de la nave. No existe dinero; en su lugar, todo se intercambia por energía. Además, el agua y el oxígeno se generan y se intercambian en un ciclo vital que mantiene el ecosistema en funcionamiento.",
+        "subtemas": [
+            "Energía y Economía",
+            "Agua y Oxígeno",
+            "Recursos y Comercio"
+        ]
+    },
+    "mision_exploracion": {
+        "titulo": "Misión y Exploración",
+        "contenido": "La misión de la TBC es explorar otros planetas y asteroides en busca de recursos valiosos, como agua y minerales, que puedan ser traídos de regreso a la Tierra. Utiliza drones y naves auxiliares para recolectar y analizar datos de exploración.",
+        "subtemas": [
+            "Objetivos de Exploración",
+            "Drones y Naves Auxiliares",
+            "Exploración Exitosa"
+        ]
+    },
+    "island_cubes": {
+        "titulo": "Island Cubes (Islas)",
+        "contenido": "Las Island Cubes son estructuras en forma de cubo que contienen recursos clave para la supervivencia de la TBC. Cada una alberga un Bonsai gigante y múltiples niveles para la producción y el comercio de recursos. Además, hay un espacio de exhibición de arte NFT para los residentes.",
+        "subtemas": [
+            "Estructura de las Islas",
+            "Producción y Comercio",
+            "Arte NFT y Cultura"
+        ]
+    }
+}
