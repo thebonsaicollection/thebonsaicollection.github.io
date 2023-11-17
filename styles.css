@@ -11,47 +11,44 @@ body {
     color: #fff; /* Color de texto blanco para una mejor legibilidad */
 }
 
-/* Contenedor principal */
-.container {
-    position: relative; /* Posicionamiento relativo */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 600px;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-    border-radius: 12px;
-    padding: 20px;
-    overflow: hidden; /* Evita que los elementos excedan el contenedor */
-}
-
 /* Título centrado */
 h1 {
-    position: absolute; /* Posicionamiento absoluto */
-    top: 20px; /* Ajusta la distancia superior */
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 18px;
+    font-size: 2rem; /* Tamaño de fuente más grande */
     text-align: center;
-    margin: 0; /* Elimina el margen para evitar espacios innecesarios */
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    white-space: normal;
+    margin-top: 40px 0 20px; /* Ajusta el margen superior a 40px y el inferior a 20px */
+    overflow-wrap: break-word; /* Permite el salto de línea */
+    word-wrap: break-word; /* Para mayor compatibilidad */
+    white-space: normal; /* Permite el ajuste de línea */
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente en la web */
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Limita el ancho del contenido para una mejor legibilidad */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo ligeramente transparente */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Sutil sombra para el contenedor */
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 20px;
+    height: auto; /* Ajusta la altura automáticamente al contenido */
 }
 
 /* Contenedor del chat */
 .chat-messages {
-    width: 100%;
+    width: 600px; /* Ancho fijo del contenedor */
+    max-width: 100%; /* Ajuste máximo al ancho del padre */
+    height: auto; /* Ajuste automático de altura */
     max-height: 350px; /* Altura máxima del área de mensajes */
-    overflow-y: auto;
-    background-color: #f7f7f7;
+    overflow-y: auto; /* Agregar scroll vertical si es necesario */
+    background-color: #f7f7f7; /* Color de fondo del chat */
     padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    margin-top: 60px; /* Ajusta el margen superior para dejar espacio para el título */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espaciado inferior */
 }
+
 
 /* Mensajes del bot (izquierda) */
 .bot-message {
@@ -156,4 +153,3 @@ button.category-button {
 .particles-js-canvas-el {
     opacity: 0.5; /* Opacidad reducida para hacer las partículas más sutiles */
 }
-

@@ -158,7 +158,7 @@ particlesJS("particles-js", {
             "type": "circle"
         },
         "opacity": {
-            "value": 0.7,
+            "value": 0.2,
             "random": false,
             "anim": {
                 "enable": false,
