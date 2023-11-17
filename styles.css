@@ -30,24 +30,22 @@ h1 {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Sutil sombra para el contenedor */
     border-radius: 12px; /* Bordes redondeados */
     padding: 20px;
+    height: auto; /* Ajusta la altura automáticamente al contenido */
 }
 
-/* Chat Messages */
+/* Contenedor del chat */
 .chat-messages {
+    width: 600px; /* Ancho fijo del contenedor */
+    max-width: 100%; /* Ajuste máximo al ancho del padre */
+    height: auto; /* Ajuste automático de altura */
+    max-height: 350px; /* Altura máxima del área de mensajes */
+    overflow-y: auto; /* Agregar scroll vertical si es necesario */
+    background-color: #f7f7f7; /* Color de fondo del chat */
     padding: 10px;
-    max-height: 500px; /* Limita la altura del área de mensajes para hacerlo desplazable */
-    overflow-y: auto;
+    border-radius: 8px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espaciado inferior */
 }
 
-/* Mensajes del usuario (derecha) */
-.user-message {
-    background-color: #3498db;
-    color: #fff;
-    border-radius: 12px; /* Bordes redondeados */
-    padding: 12px; /* Más espacio alrededor del mensaje */
-    margin: 10px 0;
-    align-self: flex-end;
-}
 
 /* Mensajes del bot (izquierda) */
 .bot-message {
@@ -57,6 +55,18 @@ h1 {
     padding: 12px; /* Más espacio alrededor del mensaje */
     margin: 10px 0;
     align-self: flex-start;
+    word-wrap: break-word; /* Romper palabras largas para que no desborden */
+}
+/* Estilo para el título de la información */
+.bot-message p:first-child {
+    font-weight: bold; /* Aplicar negrita al primer párrafo dentro de .bot-message */
+    margin-bottom: 8px; /* Espaciado inferior */
+}
+
+/* Estilo para el contenido de la información */
+.bot-message p:not(:first-child) {
+    font-weight: normal; /* Estilo normal para párrafos que no son el primero dentro de .bot-message */
+    margin-bottom: 12px; /* Espaciado inferior */
 }
 
 /* Botones */
@@ -91,19 +101,53 @@ button.category-button {
     cursor: pointer;
     margin: 10px 0;
     width: 100%; /* Ocupa todo el ancho del contenedor */
-    text-align: left; /* Alinea el texto a la izquierda */
+    text-align: center; /* Alinea el texto a la izquierda */
 }
 
-/* Botones de subcategoría */
-button.subcategory-button {
-    background-color: #ff6600; /* Cambiado a un color azul más vibrante */
-    color: #fff; /* Texto en color blanco para mayor contraste */
+/* Estilo para los botones de las subcategorías */
+.subcategory-button {
+    background-color: #ff6600; /* Color naranja */
+    color: #fff; /* Texto en color blanco */
     border: none;
-    border-radius: 12px; /* Bordes redondeados */
-    padding: 12px 24px; /* Botones más grandes */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    margin: 5px; /* Espaciado entre botones */
     cursor: pointer;
-    margin: 5px 0;
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    text-align: left; /* Alinea el texto a la izquierda */
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+/* Cambia el color al pasar el cursor */
+.subcategory-button:hover {
+    background-color: #fff; /* Fondo blanco al pasar el cursor */
+    color: #000033; /* Texto en color negro al pasar el cursor */
+}
+
+/* Contenedor de los botones de subcategorías */
+.subcategories-container {
+    display: flex;
+    flex-wrap: wrap; /* Los botones se envuelven si no caben en el ancho del contenedor */
+    justify-content: center; /* Centra los botones horizontalmente */
+    width: 100%; /* Ocupa todo el ancho */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #000033; /* Fondo oscuro */
+    border-radius: 2px; /* Bordes redondeados */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #000033; /* Color de fondo que coincida con el fondo de la página */
+}
+
+/* Estilos más sutiles para las partículas */
+.particles-js-canvas-el {
+    opacity: 0.5; /* Opacidad reducida para hacer las partículas más sutiles */
 }
 

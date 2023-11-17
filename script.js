@@ -10,7 +10,7 @@ function loadData(category, callback) {
         });
 }
 
-// Función para mostrar información de subtema en el chat
+// Función para mostrar información de subtema en el chat con efecto de escritura
 function displaySubcategoryContent(subtemaData) {
     const chatMessages = document.getElementById('chat-messages');
 
@@ -19,9 +19,18 @@ function displaySubcategoryContent(subtemaData) {
 
     const botMessage = document.createElement('div');
     botMessage.className = 'bot-message';
-    botMessage.innerHTML = `<p>${subtemaData.titulo}</p><p>${subtemaData.contenido}</p>`;
 
+    // Muestra el título con efecto de escritura
+    const titleParagraph = document.createElement('p');
+    botMessage.appendChild(titleParagraph);
     chatMessages.appendChild(botMessage);
+    typeWriterEffect(subtemaData.titulo, titleParagraph);
+
+    // Muestra el contenido con efecto de escritura
+    const contentParagraph = document.createElement('p');
+    botMessage.appendChild(contentParagraph);
+    chatMessages.appendChild(botMessage);
+    typeWriterEffect(subtemaData.contenido, contentParagraph);
 
     // Enfoca automáticamente el chat en el nuevo mensaje
     chatMessages.scrollTop = chatMessages.scrollHeight;
@@ -40,9 +49,18 @@ function loadCategoryData(category) {
     loadData(category, data => {
         const botMessage = document.createElement('div');
         botMessage.className = 'bot-message';
-        botMessage.innerHTML = `<p>${data.titulo}</p><p>${data.contenido}</p>`;
 
+        // Muestra el título de la categoría con efecto de escritura
+        const titleParagraph = document.createElement('p');
+        botMessage.appendChild(titleParagraph);
         chatMessages.appendChild(botMessage);
+        typeWriterEffect(data.titulo, titleParagraph);
+
+        // Muestra el contenido de la categoría con efecto de escritura
+        const contentParagraph = document.createElement('p');
+        botMessage.appendChild(contentParagraph);
+        chatMessages.appendChild(botMessage);
+        typeWriterEffect(data.contenido, contentParagraph);
 
         if (data.subtemas) {
             // Muestra las subcategorías como botones
@@ -83,6 +101,24 @@ function displayErrorMessage(message) {
     chatMessages.scrollTop = chatMessages.scrollHeight; // Enfoca en el mensaje de error
 }
 
+// Función para simular efecto de escritura tipo máquina de escribir
+function typeWriterEffect(text, element) {
+    let index = 0;
+    const speed = 20; // Velocidad de escritura (en milisegundos)
+
+    function type() {
+        if (index < text.length) {
+            element.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(type, speed);
+        }
+    }
+
+    // Limpia el contenido previo antes de comenzar a escribir
+    element.innerHTML = '';
+    type();
+}
+
 // Agregar eventos de clic a los botones de categoría
 const categoryButtons = document.querySelectorAll('.category-button');
 categoryButtons.forEach(button => {
@@ -100,3 +136,57 @@ backToCategoriesButton.addEventListener('click', function () {
 
 // Iniciar con la categoría por defecto al cargar la página
 loadCategoryData('problema_global');
+
+// Configuración de particles.js
+particlesJS("particles-js", {
+    "particles": {
+        // Configuraciones de partículas
+        "number": {
+            "value": 72, // Reducir la cantidad de partículas
+            "density": {
+                "enable": true,
+                "value_area": 800
+            }
+        },
+        "size": {
+            "value": 1 // Reducir el tamaño de las partículas
+        },
+        "color": {
+            "value": "#ffffff"
+        },
+        "shape": {
+            "type": "circle"
+        },
+        "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+            }
+        },
+        "move": {
+            "speed": 1 // Reducir la velocidad de movimiento de las partículas
+        }
+        // Otras configuraciones de partículas...
+    },
+    "interactivity": {
+        // Configuraciones de interactividad
+        "detect_on": "canvas",
+        "events": {
+            "onhover": {
+                "enable": true,
+                "mode": "grab"
+            },
+            "onclick": {
+                "enable": true,
+                "mode": "push"
+            }
+            // Otros eventos interactivos...
+        }
+        // Otras configuraciones de interactividad...
+    }
+    // Otras configuraciones globales de particles.js...
+});

@@ -18,22 +18,55 @@
         }
     },
     "creacion_tbc": {
-        "titulo": "Creación de TBC",
-        "contenido": "La nave espacial TBC es el núcleo de nuestro proyecto, diseñada para abordar la crisis global de recursos y cambio climático. Con su avanzado invernadero y tecnología AI, la TBC orbita alrededor de un sol artificial para proporcionar un ecosistema sostenible para la tripulación.",
-        "subtemas": [
+    "titulo": "Creación de TBC-17",
+    "contenido": "La creación de la nave TBC-17 se erige como la epítome de la ciencia y la innovación, surgiendo como una respuesta magistral a la crisis global de recursos y cambio climático. Concebida como un monumento a la ingeniería, la TBC-17 alberga en su interior un avanzado invernadero y tecnología de inteligencia artificial. Esta nave orbita majestuosamente alrededor de un sol artificial, el cual constituye la fuente perpetua de energía que sustenta un ecosistema sostenible para la tripulación.",
+    "subtemas": [
             "Diseño y Características",
             "Invernadero y AI",
             "Misiones de Exploración"
-        ]
-    },
+        ],
+    "subtemasData": {
+        "Diseño y Características": {
+            "titulo": "Diseño y Características",
+            "contenido": "El diseño de la TBC-17 incorpora una estructura aerodinámica y resistente que permite la navegación interplanetaria. Sus sistemas de propulsión avanzados y su capacidad para albergar a la tripulación durante largos períodos la convierten en una obra maestra tecnológica."
+        },
+        "Invernadero y AI": {
+            "titulo": "Invernadero y AI",
+            "contenido": "El invernadero dentro de la TBC-17 es un entorno cuidadosamente controlado que alberga una variedad de especies vegetales. La inteligencia artificial integrada supervisa y regula el ciclo de vida de las plantas, manteniendo un equilibrio ecológico esencial para la sostenibilidad de la nave y la tripulación."
+        },
+        "Misiones de Exploración": {
+            "titulo": "Misiones de Exploración",
+            "contenido": "Las misiones de exploración de la TBC-17 tienen como objetivo descubrir nuevos planetas, recursos valiosos y posibles hábitats para la humanidad. Utilizando tecnología de punta, drones y naves auxiliares, la nave lleva a cabo misiones de reconocimiento y análisis en el espacio profundo."
+        }
+    }
+},
     "recursos_economia": {
         "titulo": "Recursos y Economía",
-        "contenido": "En la TBC, el recurso más valioso es la energía, utilizada para activar todos los sistemas de la nave. No existe dinero; en su lugar, todo se intercambia por energía. Además, el agua y el oxígeno se generan y se intercambian en un ciclo vital que mantiene el ecosistema en funcionamiento.",
+        "contenido": "En TBC, el recurso más valioso es la energía, utilizada para activar todos los sistemas de la nave. No existe dinero; en su lugar, todo se intercambia por energía. Además, el agua y el oxígeno se generan y se intercambian en un ciclo vital que mantiene el ecosistema en funcionamiento. La gestión de datos y la seguridad se llevan a cabo mediante una tecnología blockchain especializada que opera en la nave. Una máquina dedicada genera Turing completos y aloja registros precisos de todos los datos de la nave. Esta blockchain automatizada garantiza la integridad, seguridad y accesibilidad exacta de los registros de la nave, asegurando un funcionamiento eficiente y confiable del ecosistema.",
         "subtemas": [
-            "Energía y Economía",
-            "Agua y Oxígeno",
+            "Energía",
+            "Agua",
+            "Oxigeno",
             "Recursos y Comercio"
-        ]
+        ],
+    "subtemasData": {
+        "Energía": {
+            "titulo": "Energía y Economía",
+            "contenido": "La energía, denominada 'TBC-Energy', es el recurso primordial en la economía de la TBC. Es utilizada para activar y mantener todos los sistemas vitales de la nave."
+        },
+        "Agua": {
+            "titulo": "Agua",
+            "contenido": "El agua, recurso vital para el ecosistema, se produce mediante avanzados sistemas de purificación y reciclaje en la nave. Los usuarios pueden adquirir agua para su consumo o para contribuir al equilibrio del ecosistema devolviéndola para su posterior transformación en energía."
+        },
+        "Oxigeno": {
+            "titulo": "Oxigeno",
+            "contenido": "El oxígeno, esencial para la respiración y el equilibrio del ecosistema, es producido mediante sistemas especializados en la nave. Los residentes pueden adquirirlo para su uso o devolverlo al ecosistema para su transformación en energía una vez utilizado."
+        },
+        "Recursos y Comercio": {
+            "titulo": "Recursos y Comercio",
+            "contenido": "El intercambio y la utilización de recursos se basan en un ciclo vital. Los recursos son adquiridos, usados y luego devueltos al sistema para su posterior conversión en energía."
+        }
+    }
     },
     "mision_exploracion": {
         "titulo": "Misión y Exploración",
