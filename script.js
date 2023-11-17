@@ -142,7 +142,7 @@ particlesJS("particles-js", {
     "particles": {
         // Configuraciones de partículas
         "number": {
-            "value": 72, // Reducir la cantidad de partículas
+            "value": 100, // Reducir la cantidad de partículas
             "density": {
                 "enable": true,
                 "value_area": 800
@@ -158,7 +158,7 @@ particlesJS("particles-js", {
             "type": "circle"
         },
         "opacity": {
-            "value": 0.5,
+            "value": 0.7,
             "random": false,
             "anim": {
                 "enable": false,

@@ -11,41 +11,47 @@ body {
     color: #fff; /* Color de texto blanco para una mejor legibilidad */
 }
 
-/* Título centrado */
-h1 {
-    font-size: 2.5rem; /* Tamaño de fuente más grande */
-    text-align: center;
-    margin: 20px 0;
-}
-
 /* Contenedor principal */
 .container {
+    position: relative; /* Posicionamiento relativo */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra verticalmente en la web */
+    justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 600px; /* Limita el ancho del contenido para una mejor legibilidad */
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo ligeramente transparente */
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Sutil sombra para el contenedor */
-    border-radius: 12px; /* Bordes redondeados */
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
     padding: 20px;
-    height: auto; /* Ajusta la altura automáticamente al contenido */
+    overflow: hidden; /* Evita que los elementos excedan el contenedor */
+}
+
+/* Título centrado */
+h1 {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 20px; /* Ajusta la distancia superior */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    text-align: center;
+    margin: 0; /* Elimina el margen para evitar espacios innecesarios */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
 }
 
 /* Contenedor del chat */
 .chat-messages {
-    width: 600px; /* Ancho fijo del contenedor */
-    max-width: 100%; /* Ajuste máximo al ancho del padre */
-    height: auto; /* Ajuste automático de altura */
+    width: 100%;
     max-height: 350px; /* Altura máxima del área de mensajes */
-    overflow-y: auto; /* Agregar scroll vertical si es necesario */
-    background-color: #f7f7f7; /* Color de fondo del chat */
+    overflow-y: auto;
+    background-color: #f7f7f7;
     padding: 10px;
-    border-radius: 8px; /* Bordes redondeados */
-    margin-bottom: 20px; /* Espaciado inferior */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-top: 60px; /* Ajusta el margen superior para dejar espacio para el título */
 }
-
 
 /* Mensajes del bot (izquierda) */
 .bot-message {
