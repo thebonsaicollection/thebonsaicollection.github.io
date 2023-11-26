@@ -27,8 +27,8 @@ h1 {
     flex-direction: column;
     justify-content: center; /* Centra verticalmente en la web */
     align-items: center;
-    width: 100%;
-    max-width: 600px; /* Limita el ancho del contenido para una mejor legibilidad */
+    width: 90%; /* Cambio a un ancho relativo */
+    max-width: 600px; /* Cambio a un ancho máximo relativo */
     background-color: rgba(255, 255, 255, 0.9); /* Fondo ligeramente transparente */
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Sutil sombra para el contenedor */
     border-radius: 12px; /* Bordes redondeados */
@@ -38,7 +38,7 @@ h1 {
 
 /* Contenedor del chat */
 .chat-messages {
-    width: 600px; /* Ancho fijo del contenedor */
+    width: 90%; /* Cambio a un ancho relativo */
     max-width: 100%; /* Ajuste máximo al ancho del padre */
     height: auto; /* Ajuste automático de altura */
     max-height: 350px; /* Altura máxima del área de mensajes */
@@ -72,15 +72,15 @@ h1 {
     margin-bottom: 12px; /* Espaciado inferior */
 }
 
-/* Botones */
+/* Estilos generales para los botones */
 button {
     background-color: #3498db;
     color: #fff;
     border: none;
-    border-radius: 12px; /* Bordes redondeados */
-    padding: 12px 24px; /* Botones más grandes */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 2px 12px; /* Botones más grandes */
     cursor: pointer;
-    margin: 10px 0;
+    margin: 2px 0;
     transition: background-color 0.2s ease; /* Efecto de transición suave al pasar el mouse */
 }
 
@@ -89,14 +89,32 @@ button:hover {
     background-color: #2674a7;
 }
 
-/* Alinea el botón al centro */
-button.centered-button {
-    align-self: center;
-}
+/* ... (otros estilos CSS) ... */
 
 /* Botones de categoría */
 button.category-button {
     background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 12px 24px; /* Botones más grandes */
+    cursor: pointer;
+    margin: 10px 0;
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    text-align: center; /* Alinea el texto al centro */
+    font-weight: normal; /* Texto en negrita */
+    transition: background-color 0.2s ease, font-weight 0.2s ease; /* Efecto de transición suave al pasar el mouse */
+}
+
+/* Cambia el color al pasar el cursor */
+button.category-button:hover {
+    background-color: #2674a7; /* Cambia el color al pasar el cursor */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Botón "Volver al Inicio" con color diferente */
+.back-to-categories-button {
+    background-color: #ff3333; /* Color rojo */
     color: #fff;
     border: none;
     border-radius: 12px; /* Bordes redondeados */
@@ -105,7 +123,14 @@ button.category-button {
     margin: 10px 0;
     width: 100%; /* Ocupa todo el ancho del contenedor */
     text-align: center; /* Alinea el texto a la izquierda */
+    transition: background-color 0.2s ease; /* Efecto de transición suave al pasar el mouse */
 }
+
+/* Cambia el color al pasar el cursor */
+.back-to-categories-button:hover {
+    background-color: #cc0000; /* Cambia el color al pasar el cursor */
+}
+
 
 /* Estilo para los botones de las subcategorías */
 .subcategory-button {
@@ -138,7 +163,6 @@ button.category-button {
     margin-top: 20px; /* Espaciado superior */
 }
 
-
 #particles-js {
     position: fixed;
     top: 0;
@@ -152,4 +176,23 @@ button.category-button {
 /* Estilos más sutiles para las partículas */
 .particles-js-canvas-el {
     opacity: 0.5; /* Opacidad reducida para hacer las partículas más sutiles */
+}
+
+/* Media queries para adaptar a diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas */
+    .container {
+        width: 95%; /* Cambia el ancho para pantallas más pequeñas */
+    }
+
+    .chat-messages {
+        width: 95%; /* Cambio a un ancho relativo */
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Estilos para pantallas más grandes */
+    .container {
+        max-width: 1200px; /* Cambia el ancho máximo para pantallas más grandes */
+    }
 }

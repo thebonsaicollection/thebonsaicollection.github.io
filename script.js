@@ -131,11 +131,12 @@ categoryButtons.forEach(button => {
 // Agregar evento de clic al botón "Volver al Inicio"
 const backToCategoriesButton = document.getElementById('back-to-categories-button');
 backToCategoriesButton.addEventListener('click', function () {
-    loadCategoryData('problema_global'); // Cambia 'problema_global' por la categoría de inicio
+    loadCategoryData('tbc_inicio');
 });
 
+
 // Iniciar con la categoría por defecto al cargar la página
-loadCategoryData('problema_global');
+loadCategoryData('tbc_inicio');
 
 // Configuración de particles.js
 particlesJS("particles-js", {

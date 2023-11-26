@@ -1,25 +1,58 @@
 {
+    "tbc_inicio": {
+        "titulo": "The Bonsai Collection",
+        "contenido": "Sumérgete en un universo único donde el arte, la creatividad y la tecnología se entrelazan en un metaverso vanguardista. ",
+        "subtemas": [
+            "Concepto de Arte Digital y Metaverso Sci-Fi",
+            "Coleccionismo, Rareza y Metaverso Narrativo:",
+            "Comunidad Interactiva en el Metaverso"
+        ],
+        "subtemasData": {
+            "Concepto de Arte Digital y Metaverso Sci-Fi": {
+                "titulo": "Concepto de Arte Digital y Metaverso Sci-Fi",
+                "contenido": "The Bonsai Collection es una plataforma pionera que fusiona el arte digital con la narrativa de un metaverso futurista y sci-fi. Ofrece una exclusiva variedad de obras de arte digital inspiradas en la elegancia y belleza del arte del bonsái japonés. Cada pieza es única, creada digitalmente y respaldada por la tecnología de los NFT (Tokens No Fungibles)"
+            },
+            "Coleccionismo, Rareza y Metaverso Narrativo:": {
+                "titulo": "Coleccionismo, Rareza y Metaverso Narrativo:",
+                "contenido": "Esta colección representa más que simples piezas de arte digital. Cada NFT en The Bonsai Collection es una representación exclusiva dentro del metaverso, lo que le otorga singularidad, autenticidad y un lugar en la narrativa de la nave espacial TBC-17. Los coleccionistas encuentran atractivo el ser parte de este metaverso y poseer estas piezas únicas que tienen su propia historia y valor en este entorno narrativo."
+            },
+            "Comunidad Interactiva en el Metaverso": {
+                "titulo": "Comunidad Interactiva en el Metaverso",
+                "contenido": "The Bonsai Collection no solo es un escaparate de arte digital, sino un lugar donde los coleccionistas, entusiastas del arte y miembros de la comunidad participan activamente en este metaverso sci-fi. Con la inclusión de la historia de la nave estelar y el invernadero que genera energía perpetua, se crea un universo narrativo interactivo y en constante evolución que atrae a una comunidad comprometida y creativa, ofreciendo una experiencia única en el mundo del arte digital y el coleccionismo."
+            }
+        }    
+    },
     "problema_global": {
         "titulo": "Problema Global",
         "contenido": "El siglo XXI presenció un problema apremiante en la Tierra: la escasez de agua y recursos naturales. El calentamiento global y el agotamiento de recursos llevaron a la humanidad a enfrentar una crisis sin precedentes. La supervivencia del planeta estaba en juego.",
         "subtemas": [
-            "Escasez de Agua y Recursos",
-            "Calentamiento Global"
+            "Agotamiento de recursos naturales",
+            "Contaminación atmosférica y ambiental",
+            "Desarrollo Industrial No Sostenible",
+            "Aumento de la población y demanda de recursos"
         ],
         "subtemasData": {
-            "Escasez de Agua y Recursos": {
-                "titulo": "Escasez de Agua y Recursos",
-                "contenido": "Este subtema se enfoca en la disminución de los recursos naturales, particularmente el agua. Explica cómo la escasez de agua afectó a las comunidades en todo el mundo y las soluciones propuestas para abordar este problema."
+            "Agotamiento de recursos naturales": {
+                "titulo": "Agotamiento de recursos naturales",
+                "contenido": "El agotamiento de recursos como combustibles fósiles, agua dulce y minerales esenciales llevó a la humanidad a una crisis de abastecimiento, intensificando la competencia y el conflicto por estos recursos escasos."
             },
-            "Calentamiento Global": {
-                "titulo": "Calentamiento Global",
-                "contenido": "El calentamiento global es un fenómeno climático que resulta en un aumento de la temperatura promedio de la Tierra debido a actividades humanas. Este subtema analiza las causas, impactos y medidas para mitigar el calentamiento global."
+            "Contaminación atmosférica y ambiental": {
+                "titulo": "Contaminación atmosférica y ambiental",
+                "contenido": "La emisión descontrolada de gases de efecto invernadero y la contaminación del aire, agua y suelo deterioraron la calidad del medio ambiente, llevando a un aumento significativo de la temperatura global y al cambio climático."
+            },
+            "Desarrollo Industrial No Sostenible": {
+                "titulo": "Desarrollo Industrial No Sostenible",
+                "contenido": "La expansión industrial sin controles ambientales adecuados contribuyó a la degradación del medio ambiente, la deforestación y la alteración de ecosistemas vitales, lo que afectó el equilibrio natural del planeta."
+            },
+            "Aumento de la población y demanda de recursos": {
+                "titulo": "Aumento de la población y demanda de recursos",
+                "contenido": "El crecimiento poblacional desmedido y el incremento de la demanda de recursos llevaron a una sobreexplotación de los ecosistemas, agotando las reservas naturales y llevando a la crisis de escasez de recursos."
             }
         }
     },
     "creacion_tbc": {
     "titulo": "Creación de TBC-17",
-    "contenido": "La creación de la nave TBC-17 se erige como la epítome de la ciencia y la innovación, surgiendo como una respuesta magistral a la crisis global de recursos y cambio climático. Concebida como un monumento a la ingeniería, la TBC-17 alberga en su interior un avanzado invernadero y tecnología de inteligencia artificial. Esta nave orbita majestuosamente alrededor de un sol artificial, el cual constituye la fuente perpetua de energía que sustenta un ecosistema sostenible para la tripulación.",
+    "contenido": "La creación de la nave TBC-17 se erige como la epítome de la ciencia y la innovación, surgiendo como una respuesta a la crisis global de recursos y cambio climático. Concebida como un monumento a la ingeniería, la TBC-17 alberga en su interior un avanzado invernadero y tecnología de inteligencia artificial con 12 Main Lands y 36 Mini Lands. Esta nave posee en el centro de su invernadero un sol artificial, alrededor del que las islas orbitan y el cual constituye la fuente perpetua de energía que sustenta un ecosistema sostenible para la tripulación.",
     "subtemas": [
             "Diseño y Características",
             "Invernadero y AI",
@@ -37,6 +70,52 @@
         "Misiones de Exploración": {
             "titulo": "Misiones de Exploración",
             "contenido": "Las misiones de exploración de la TBC-17 tienen como objetivo descubrir nuevos planetas, recursos valiosos y posibles hábitats para la humanidad. Utilizando tecnología de punta, drones y naves auxiliares, la nave lleva a cabo misiones de reconocimiento y análisis en el espacio profundo."
+        }
+    }
+    },
+    "invernadero_tbc": {
+    "titulo": "Invernadero",
+    "contenido": "La creación de la nave TBC-17 se erige como la epítome de la ciencia y la innovación, surgiendo como una respuesta a la crisis global de recursos y cambio climático. Concebida como un monumento a la ingeniería, la TBC-17 alberga en su interior un avanzado invernadero y tecnología de inteligencia artificial con 12 Main Lands y 36 Mini Lands. Esta nave posee en el centro de su invernadero un sol artificial, alrededor del que las islas orbitan y el cual constituye la fuente perpetua de energía que sustenta un ecosistema sostenible para la tripulación.",
+    "subtemas": [
+            "Sostenibilidad Ecológica",
+            "Ciclo Vital",
+            "Ajuste Tecnológico"
+        ],
+    "subtemasData": {
+        "Sostenibilidad Ecológica": {
+            "titulo": "Sostenibilidad Ecológica",
+            "contenido": "El invernadero fue diseñado como un ecosistema cerrado y autosuficiente. Se utilizaron técnicas avanzadas de hidroponía y aeroponía para cultivar una variedad de plantas y vegetación esencial para el suministro de oxígeno y la producción de alimentos."
+        },
+        "Ciclo Vital": {
+            "titulo": "Ciclo Vital",
+            "contenido": "El invernadero opera en un ciclo vital completo, donde las plantas no solo producían oxígeno a través de la fotosíntesis, sino que también purificaban el aire y ayudaban a reciclar los desechos orgánicos de la tripulación."
+        },
+        "Ajuste Tecnológico": {
+            "titulo": "Ajuste Tecnológico",
+            "contenido": "La gestión del invernadero se basaba en la integración de sensores y sistemas de control automáticos. Estos sistemas monitoreaban constantemente las condiciones ambientales como la humedad, la temperatura, la iluminación y los niveles de nutrientes para garantizar un crecimiento óptimo de las plantas."
+        }
+    }
+},
+        "ia_tech": {
+    "titulo": "Inteligencia Artificial (IA) en la Nave",
+    "contenido": "La IA desempeñó un papel crucial en el funcionamiento y la gestión de la nave espacial TBC, asegurando un control inteligente y eficiente de los sistemas vitales.",
+    "subtemas": [
+            "Control Integral",
+            "Adaptabilidad y Aprendizaje",
+            "Apoyo a la tripulación"
+        ],
+    "subtemasData": {
+        "Control Integral": {
+            "titulo": "Control Integral",
+            "contenido": "La IA supervisa y gestiona todos los aspectos de la nave espacial, incluido el invernadero, la generación de energía, la gestión del agua y el oxígeno, la navegación y las comunicaciones."
+        },
+        "Adaptabilidad y Aprendizaje": {
+            "titulo": "Adaptabilidad y Aprendizaje",
+            "contenido": "Diseñada para aprender y adaptarse a las condiciones espaciales cambiantes, la IA emplea algoritmos de aprendizaje automático para mejorar su eficiencia con el tiempo. Esta optimización garantiza la maximización de los recursos y maximiza la eficacia de la nave espacial."
+        },
+        "Ajuste Tecnológico": {
+            "titulo": "Ajuste Tecnológico",
+            "contenido": "La gestión del invernadero se basaba en la integración de sensores y sistemas de control automáticos. Estos sistemas monitoreaban constantemente las condiciones ambientales como la humedad, la temperatura, la iluminación y los niveles de nutrientes para garantizar un crecimiento óptimo de las plantas."
         }
     }
 },
@@ -78,8 +157,8 @@
         ]
     },
     "island_cubes": {
-        "titulo": "Island Cubes (Islas)",
-        "contenido": "Las Island Cubes son estructuras en forma de cubo que contienen recursos clave para la supervivencia de la TBC. Cada una alberga un Bonsai gigante y múltiples niveles para la producción y el comercio de recursos. Además, hay un espacio de exhibición de arte NFT para los residentes.",
+        "titulo": "Bonsai Islands (Islas)",
+        "contenido": "Las Island Bonsai son estructuras en forma de cubo que contienen recursos clave para la supervivencia de la TBC. Cada una alberga un Bonsai gigante y múltiples niveles para la producción y el comercio de recursos. Además, hay un espacio de exhibición de arte NFT para los residentes.",
         "subtemas": [
             "Estructura de las Islas",
             "Producción y Comercio",
