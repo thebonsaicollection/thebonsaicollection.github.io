@@ -148,7 +148,7 @@ particlesJS("particles-js", {
             }
         },
         "color": {
-            "value": "#ffffff", // Color base
+            "value": "#000033", // Color base
             "gradient": {
                 "start_color": "#DA22FF", // Color de inicio del gradiente (violeta)
                 "end_color": "#9733EE", // Color final del gradiente (púrpura)
@@ -181,7 +181,7 @@ particlesJS("particles-js", {
         "move": {
             "direction": "top",
             "out_mode": "out",
-            "speed": 0.1
+            "speed": 0.5
         }
     },
     "interactivity": {
@@ -201,7 +201,7 @@ particlesJS("particles-js", {
                 "duration": 0.4
             },
             "push": {
-                "particles_nb": 4
+                "particles_nb": 6
             }
         }
     }
