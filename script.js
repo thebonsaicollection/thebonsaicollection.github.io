@@ -138,56 +138,71 @@ backToCategoriesButton.addEventListener('click', function () {
 // Iniciar con la categoría por defecto al cargar la página
 loadCategoryData('tbc_inicio');
 
-// Configuración de particles.js
 particlesJS("particles-js", {
     "particles": {
-        // Configuraciones de partículas
         "number": {
-            "value": 100, // Reducir la cantidad de partículas
+            "value": 120,
             "density": {
                 "enable": true,
                 "value_area": 800
             }
         },
-        "size": {
-            "value": 1 // Reducir el tamaño de las partículas
-        },
         "color": {
-            "value": "#ffffff"
+            "value": "#ffffff", // Color base
+            "gradient": {
+                "start_color": "#DA22FF", // Color de inicio del gradiente (violeta)
+                "end_color": "#9733EE", // Color final del gradiente (púrpura)
+                "direction": "top" // Dirección del gradiente (puede ser 'top', 'top right', 'top left', etc.)
+            }
         },
         "shape": {
             "type": "circle"
         },
         "opacity": {
-            "value": 0.2,
-            "random": false,
+            "value": 0.5,
+            "random": true,
             "anim": {
-                "enable": false,
-                "speed": 1,
+                "enable": true,
+                "speed": 0.5,
                 "opacity_min": 0.1,
                 "sync": false
             }
         },
+        "size": {
+            "value": 2,
+            "random": true,
+            "anim": {
+                "enable": true,
+                "speed": 0.5,
+                "size_min": 0.1,
+                "sync": false
+            }
+        },
         "move": {
-            "speed": 1 // Reducir la velocidad de movimiento de las partículas
+            "direction": "top",
+            "out_mode": "out",
+            "speed": 0.1
         }
-        // Otras configuraciones de partículas...
     },
     "interactivity": {
-        // Configuraciones de interactividad
-        "detect_on": "canvas",
         "events": {
             "onhover": {
                 "enable": true,
-                "mode": "grab"
+                "mode": "repulse"
             },
             "onclick": {
                 "enable": true,
                 "mode": "push"
             }
-            // Otros eventos interactivos...
+        },
+        "modes": {
+            "repulse": {
+                "distance": 100,
+                "duration": 0.4
+            },
+            "push": {
+                "particles_nb": 4
+            }
         }
-        // Otras configuraciones de interactividad...
     }
-    // Otras configuraciones globales de particles.js...
 });

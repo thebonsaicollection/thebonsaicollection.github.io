@@ -113,8 +113,8 @@
             "titulo": "Adaptabilidad y Aprendizaje",
             "contenido": "Diseñada para aprender y adaptarse a las condiciones espaciales cambiantes, la IA emplea algoritmos de aprendizaje automático para mejorar su eficiencia con el tiempo. Esta optimización garantiza la maximización de los recursos y maximiza la eficacia de la nave espacial."
         },
-        "Ajuste Tecnológico": {
-            "titulo": "Ajuste Tecnológico",
+        "Apoyo a la tripulación": {
+            "titulo": "Apoyo a la tripulación",
             "contenido": "La gestión del invernadero se basaba en la integración de sensores y sistemas de control automáticos. Estos sistemas monitoreaban constantemente las condiciones ambientales como la humedad, la temperatura, la iluminación y los niveles de nutrientes para garantizar un crecimiento óptimo de las plantas."
         }
     }
@@ -146,19 +146,37 @@
             "contenido": "El intercambio y la utilización de recursos se basan en un ciclo vital. Los recursos son adquiridos, usados y luego devueltos al sistema para su posterior conversión en energía."
         }
     }
-    },
+ },
     "mision_exploracion": {
         "titulo": "Misión y Exploración",
-        "contenido": "La misión de la TBC es explorar otros planetas y asteroides en busca de recursos valiosos, como agua y minerales, que puedan ser traídos de regreso a la Tierra. Utiliza drones y naves auxiliares para recolectar y analizar datos de exploración.",
+        "contenido": "La nave TBC tiene como misión principal explorar planetas y asteroides en el sistema solar, en busca de recursos vitales como agua, minerales y otros elementos que puedan ser valiosos para la supervivencia en la Tierra.",
         "subtemas": [
             "Objetivos de Exploración",
             "Drones y Naves Auxiliares",
-            "Exploración Exitosa"
-        ]
+            "Exploración"
+        ],
+        "subtemasData": {
+        "Objetivos de Exploración": {
+            "titulo": "Objetivos de Exploración",
+            "contenido": "Sus objetivos de exploración se centran en la recolección estratégica de estos recursos, utilizando drones y naves auxiliares para recopilar datos y muestras de distintos lugares del espacio."
+        },
+        "Drones y Naves Auxiliares": {
+            "titulo": "Drones y Naves Auxiliares",
+            "contenido": "Los drones y las naves auxiliares son dispositivos no tripulados diseñados para realizar tareas específicas durante las misiones de exploración. Los drones suelen ser vehículos aéreos o terrestres que recopilan información y muestras, mientras que las naves auxiliares son vehículos más grandes y versátiles que pueden realizar tareas más complejas, como la extracción y el transporte de recursos."
+        },
+        "Oxigeno": {
+            "titulo": "Oxigeno",
+            "contenido": "El oxígeno, esencial para la respiración y el equilibrio del ecosistema, es producido mediante sistemas especializados en la nave. Los residentes pueden adquirirlo para su uso o devolverlo al ecosistema para su transformación en energía una vez utilizado."
+        },
+        "Exploración": {
+            "titulo": "Exploración",
+            "contenido": "Una exploración exitosa implica el retorno de recursos valiosos a la Tierra, previamente recolectados y analizados en los diferentes planetas o asteroides explorados. Estos recursos son enviados de vuelta a la Tierra en naves especialmente equipadas para este propósito, contribuyendo así al abastecimiento de recursos vitales en el planeta."
+        }
+    }
     },
     "island_cubes": {
-        "titulo": "Bonsai Islands (Islas)",
-        "contenido": "Las Island Bonsai son estructuras en forma de cubo que contienen recursos clave para la supervivencia de la TBC. Cada una alberga un Bonsai gigante y múltiples niveles para la producción y el comercio de recursos. Además, hay un espacio de exhibición de arte NFT para los residentes.",
+        "titulo": "Bonsai Islands",
+        "contenido": "Las Islas son estructuras en forma de cubo dentro de la nave TBC, cada una representando un ambiente autónomo y vital para el ecosistema de la nave.",
         "subtemas": [
             "Estructura de las Islas",
             "Producción y Comercio",
