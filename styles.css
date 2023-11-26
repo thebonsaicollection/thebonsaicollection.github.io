@@ -27,7 +27,7 @@ h1 {
     flex-direction: column;
     justify-content: center; /* Centra verticalmente en la web */
     align-items: center;
-    width: 90%; /* Cambio a un ancho relativo */
+    width: 70%; /* Cambio a un ancho relativo */
     max-width: 600px; /* Cambio a un ancho máximo relativo */
     background-color: rgba(255, 255, 255, 0.9); /* Fondo ligeramente transparente */
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Sutil sombra para el contenedor */
