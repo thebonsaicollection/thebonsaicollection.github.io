@@ -23,30 +23,26 @@ h1 {
 
 /* Contenedor principal */
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centra verticalmente en la web */
-    align-items: center;
-    width: 90%; /* Cambio a un ancho relativo */
-    max-width: 800px; /* Cambio a un ancho máximo relativo */
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo ligeramente transparente */
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Sutil sombra para el contenedor */
-    border-radius: 12px; /* Bordes redondeados */
+    width: 100%; /* Ancho relativo */
+    max-width: 800px; /* Ancho máximo */
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
     padding: 20px;
-    height: auto; /* Ajusta la altura automáticamente al contenido */
+    height: auto;
+    margin-top: 20px; /* Ajusta el margen superior */
 }
 
 /* Contenedor del chat */
 .chat-messages {
-    width: 90%; /* Cambio a un ancho relativo */
-    max-width: 100%; /* Ajuste máximo al ancho del padre */
-    height: auto; /* Ajuste automático de altura */
-    max-height: 350px; /* Altura máxima del área de mensajes */
-    overflow-y: auto; /* Agregar scroll vertical si es necesario */
-    background-color: #f7f7f7; /* Color de fondo del chat */
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto; /* Margen izquierdo automático */
+    margin-right: auto; /* Margen derecho automático */
+    background-color: #f7f7f7;
     padding: 10px;
-    border-radius: 8px; /* Bordes redondeados */
-    margin-bottom: 20px; /* Espaciado inferior */
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 
@@ -181,69 +177,4 @@ button.category-button:hover {
     left: 0;
     z-index: -1;
     background-color: #050930; /* Cambia el color de las partículas a rojo, por ejemplo */
-}
-
-
-/* Estilos para pantallas más pequeñas */
-@media (min-width: 768px) {
-    .container {
-        width: 85%; /* Ancho relativo para pantallas más pequeñas */
-    }
-
-    .chat-messages {
-        width: 95%; /* Ancho relativo para pantallas más pequeñas */
-    }
-
-    /* Altura relativa para pantallas más pequeñas */
-    .chat-container {
-        height: 70vh; /* Por ejemplo, el contenedor ocupa el 70% del alto de la ventana */
-    }
-}
-
-/* Estilos para pantallas medianas */
-@media (min-width: 992px) {
-    .container {
-        width: 80%; /* Ancho relativo para pantallas medianas */
-    }
-
-    .chat-messages {
-        width: 90%; /* Ancho relativo para pantallas medianas */
-    }
-
-    /* Altura relativa para pantallas medianas */
-    .chat-container {
-        height: 75vh; /* Por ejemplo, el contenedor ocupa el 75% del alto de la ventana */
-    }
-}
-
-/* Estilos para pantallas grandes */
-@media (min-width: 1400px) {
-    .container {
-        width: 70%; /* Ancho relativo para pantallas grandes */
-    }
-
-    .chat-messages {
-        width: 85%; /* Ancho relativo para pantallas grandes */
-    }
-
-    /* Altura relativa para pantallas grandes */
-    .chat-container {
-        height: 85vh; /* Por ejemplo, el contenedor ocupa el 85% del alto de la ventana */
-    }
-}
-
-/* Estilos para pantallas extra grandes */
-@media (min-width: 1800px) {
-    .container {
-        width: 60%; /* Ancho relativo para pantallas extra grandes */
-    }
-
-    .chat-messages {
-        width: 80%; /* Ancho relativo para pantallas extra grandes */
-    }
-
-    /* Altura relativa para pantallas extra grandes */
-    .chat-container {
-        height: 90vh; /* Por ejemplo, el contenedor ocupa el 90% del alto de la ventana */
-    }
 }
