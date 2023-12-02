@@ -79,7 +79,9 @@
     "subtemas": [
             "Sostenibilidad Ecológica",
             "Ciclo Vital",
-            "Ajuste Tecnológico"
+            "Ajuste Tecnológico",
+            "Cultivos Hidropónicos",
+            "Cultivos Aeropónicos"
         ],
     "subtemasData": {
         "Sostenibilidad Ecológica": {
@@ -93,11 +95,19 @@
         "Ajuste Tecnológico": {
             "titulo": "Ajuste Tecnológico",
             "contenido": "La gestión del invernadero se basaba en la integración de sensores y sistemas de control automáticos. Estos sistemas monitoreaban constantemente las condiciones ambientales como la humedad, la temperatura, la iluminación y los niveles de nutrientes para garantizar un crecimiento óptimo de las plantas."
+        },
+        "Cultivos Hidropónicos": {
+            "titulo": "Cultivos Hidropónicos",
+            "contenido": "- Eficiencia en la producción: A pesar de requerir una cantidad más significativa de agua y posiblemente recursos adicionales, estos cultivos producen resultados de alta calidad y ricos en nutrientes. - Mayor rendimiento: Aunque pueden ser más costosos de mantener, los cultivos hidropónicos tienden a ofrecer una mayor cantidad de producción en comparación con los cultivos aeropónicos. - Calidad superior: Su método de cultivo en un entorno acuático controlado puede generar alimentos más sabrosos y nutritivos."
+        },
+        "Cultivos Aeropónicos": {
+            "titulo": "Cultivos Aeropónicos",
+            "contenido": "- Eficiencia del uso del agua: Utilizan menos agua en comparación con los cultivos hidropónicos, ya que funcionan con un sistema de pulverización. - Mayor rapidez de crecimiento: Son ideales para cultivos que requieren un ciclo de crecimiento más corto o para plantaciones que necesitan una rápida respuesta de producción. - Menor rendimiento en comparación: Aunque son más eficientes en el uso del agua, los cultivos aeropónicos pueden proporcionar una menor cantidad de producción en comparación con los hidropónicos."
         }
     }
 },
         "ia_tech": {
-    "titulo": "Inteligencia Artificial (IA) en la Nave",
+    "titulo": "Inteligencia Artificial En TBC-17",
     "contenido": "La IA desempeñó un papel crucial en el funcionamiento y la gestión de la nave espacial TBC, asegurando un control inteligente y eficiente de los sistemas vitales.",
     "subtemas": [
             "Control Integral",
@@ -146,7 +156,7 @@
             "contenido": "El intercambio y la utilización de recursos se basan en un ciclo vital. Los recursos son adquiridos, usados y luego devueltos al sistema para su posterior conversión en energía."
         }
     }
- },
+},
     "mision_exploracion": {
         "titulo": "Misión y Exploración",
         "contenido": "La nave TBC tiene como misión principal explorar planetas y asteroides en el sistema solar, en busca de recursos vitales como agua, minerales y otros elementos que puedan ser valiosos para la supervivencia en la Tierra.",
@@ -173,9 +183,32 @@
             "contenido": "Una exploración exitosa implica el retorno de recursos valiosos a la Tierra, previamente recolectados y analizados en los diferentes planetas o asteroides explorados. Estos recursos son enviados de vuelta a la Tierra en naves especialmente equipadas para este propósito, contribuyendo así al abastecimiento de recursos vitales en el planeta."
         }
     }
-    },
+},
     "island_cubes": {
         "titulo": "Bonsai Islands",
+        "contenido": "Las Islas son estructuras en forma de cubo dentro de la nave TBC, cada una representando un ambiente autónomo y vital para el ecosistema de la nave.",
+        "subtemas": [
+            "Estructura de las Islas",
+            "Producción y Comercio",
+            "Arte NFT y Cultura"
+        ],
+        "subtemasData": {
+        "Estructura de las Islas": {
+            "titulo": "Estructura de las Islas",
+            "contenido": "Las Islas son estructuras fundamentales dentro de la nave TBC, cada una diseñada como un cubo autónomo y vital para el ecosistema de la nave. Estas islas representan diferentes ambientes, cada uno con características específicas que contribuyen al equilibrio y la sostenibilidad del entorno cerrado de la nave."
+        },
+        "Producción y Comercio": {
+            "titulo": "Producción y Comercio",
+            "contenido": "El aspecto de producción y comercio en la nave TBC es un sistema interno que permite la generación, intercambio y gestión de recursos. Los isla funcionan como centros de producción, cultivando alimentos, generando energía, purificando agua y produciendo oxígeno. Además, estos recursos pueden ser intercambiados y gestionados dentro de la comunidad de la nave."
+        },
+        "Arte NFT y Cultura": {
+            "titulo": "Arte NFT y Cultura",
+            "contenido": "El Arte NFT y la Cultura en la TBC se entrelazan con la creatividad y la narrativa del metaverso. Cada isla alberga obras de arte digital únicas respaldadas por tecnología NFT. La cultura en la nave se nutre de la expresión artística, la historia de las obras y su papel en la comunidad, creando así un entorno cultural en constante evolución dentro del metaverso de la TBC."
+        }
+    }
+},
+    "island_": {
+        "titulo": "Bonsai",
         "contenido": "Las Islas son estructuras en forma de cubo dentro de la nave TBC, cada una representando un ambiente autónomo y vital para el ecosistema de la nave.",
         "subtemas": [
             "Estructura de las Islas",

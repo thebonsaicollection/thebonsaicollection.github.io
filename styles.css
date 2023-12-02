@@ -168,6 +168,20 @@ button.category-button:hover {
     margin-top: 20px; /* Espaciado superior */
 }
 
+/* Agrega estilos para los botones "Cultivos Hidropónicos" */
+.subcategory-button.cultivos-hidroponicos {
+    background-color: #3498db; /* Cambia el color de fondo del botón */
+    color: #fff; /* Cambia el color del texto */
+    /* Otros estilos que desees aplicar a este botón */
+}
+
+/* Agrega estilos para los botones "Cultivos Aeropónicos" */
+.subcategory-button.cultivos-aeroponicos {
+    background-color: #e74c3c; /* Cambia el color de fondo del botón */
+    color: #fff; /* Cambia el color del texto */
+    /* Otros estilos que desees aplicar a este botón */
+}
+
 #particles-js {
     position: fixed;
     top: 0;
