@@ -6,19 +6,21 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 75%;
+    height: 100%;
     margin: 0;
     color: #fff; /* Color de texto blanco para una mejor legibilidad */
+    position:relative;
 }
 
-/* Título centrado */
 h1 {
-    font-size: 2rem; /* Tamaño de fuente más grande */
+    font-size: 2.5rem; /* Aumenta el tamaño de la fuente para destacar más */
     text-align: center;
-    margin-top: 40px 0 20px; /* Ajusta el margen superior a 40px y el inferior a 20px */
-    overflow-wrap: break-word; /* Permite el salto de línea */
-    word-wrap: break-word; /* Para mayor compatibilidad */
-    white-space: normal; /* Permite el ajuste de línea */
+    margin-top: 30px; /* Reduce el margen superior */
+    margin-bottom: 20px; /* Añade un margen inferior para separarlo del contenido siguiente */
+    color: #fff; /* Color blanco para que coincida con el diseño general */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Agrega una sombra al texto para destacarlo */
+    position: relative;
+    z-index: 4;
 }
 
 /* Contenedor principal */
@@ -35,7 +37,9 @@ h1 {
     padding: 20px;
     margin-left: auto; /* Margen izquierdo automático */
     margin-right: auto; /* Margen derecho automático */
-    height: auto; /* Ajusta la altura automáticamente al contenido */
+    height: 100%; /* Ajusta la altura automáticamente al contenido */
+    position: relative;
+    z-index: 1;
 }
 
 /* Contenedor del chat */
@@ -170,16 +174,18 @@ button.category-button:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 0;
     background-color: #000033; /* Color de fondo que coincida con el fondo de la página */
 }
 
 /* Estilos más sutiles para las partículas */
 .particles-js-canvas-el {
-    opacity: 0.7; /* Opacidad reducida para hacer las partículas más sutiles */
+    opacity: 0.5; /* Opacidad reducida para hacer las partículas más sutiles */
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: #050930; /* Cambia el color de las partículas a rojo, por ejemplo */
+    background-color: #000033;
+    width: 100%; /* Ajusta el ancho al 100% */
+    height: 100%; /* Ajusta la altura al 100% */
 }

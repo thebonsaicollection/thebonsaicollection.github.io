@@ -141,25 +141,20 @@ loadCategoryData('tbc_inicio');
 particlesJS("particles-js", {
     "particles": {
         "number": {
-            "value": 120,
+            "value": 72,
             "density": {
                 "enable": true,
                 "value_area": 800
             }
         },
         "color": {
-            "value": "#000033", // Color base
-            "gradient": {
-                "start_color": "#DA22FF", // Color de inicio del gradiente (violeta)
-                "end_color": "#9733EE", // Color final del gradiente (púrpura)
-                "direction": "top" // Dirección del gradiente (puede ser 'top', 'top right', 'top left', etc.)
-            }
+            "value": "#ffffff", // Color de las partículas (blanco)
         },
         "shape": {
             "type": "circle"
         },
         "opacity": {
-            "value": 0.5,
+            "value": 1,
             "random": true,
             "anim": {
                 "enable": true,
@@ -173,36 +168,45 @@ particlesJS("particles-js", {
             "random": true,
             "anim": {
                 "enable": true,
-                "speed": 0.5,
+                "speed": 2,
                 "size_min": 0.1,
                 "sync": false
             }
         },
         "move": {
-            "direction": "top",
-            "out_mode": "out",
-            "speed": 0.5
+            "enable": true,
+            "speed": 0.2,
+            "direction": "none",
+            "random": true,
+            "straight": false,
+            "out_mode": "out"
         }
     },
-    "interactivity": {
+     "interactivity": {
+        "detect_on": "canvas",
         "events": {
             "onhover": {
                 "enable": true,
-                "mode": "repulse"
+                "mode": "connect"
             },
             "onclick": {
                 "enable": true,
                 "mode": "push"
-            }
+            },
+            "resize": true
         },
         "modes": {
-            "repulse": {
-                "distance": 100,
-                "duration": 0.4
+            "connect": {
+                "distance": 75,
+                "line_linked": {
+                    "opacity": 0.1,
+                    "color": "#ffffff"
+                }
             },
             "push": {
-                "particles_nb": 6
+                "particles_nb": 2
             }
         }
     }
 });
+
