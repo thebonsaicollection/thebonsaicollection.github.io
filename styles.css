@@ -12,6 +12,58 @@ body {
     position:relative;
 }
 
+/* Estilos para el nuevo header neon */
+.neon-header {
+    width: 100%;
+    background-color: #000;
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para el efecto flotante */
+
+    /* Estilos para el texto y enlaces */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.neon-header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.neon-header nav ul li {
+    display: inline;
+}
+
+.neon-header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out; /* Efecto de transición al pasar el ratón */
+}
+
+.neon-header nav ul li a:hover {
+    color: #ff00ff; /* Cambia el color al pasar el ratón */
+}
+
+.separator {
+    color: #fff;
+    padding: 0 5px;
+}
+
+/* Estilos para el título debajo del header */
+.title-section {
+    text-align: center; /* Centra el título */
+    margin-top: 20px; /* Espacio desde el header */
+    margin-bottom: 20px; /* Espacio hacia el chat */
+    font-size: 36px; /* Tamaño del título */
+    color: #fff; /* Color del texto */
+    font-family: 'Exo 2', sans-serif; /* Tipo de fuente */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+
+
 h1 {
     font-size: 2.5rem; /* Aumenta el tamaño de la fuente para destacar más */
     text-align: center;
