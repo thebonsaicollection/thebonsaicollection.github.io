@@ -256,7 +256,12 @@ button.category-button:hover {
     height: 100%; /* Ajusta la altura al 100% */
 }
 
-/* Ajustes para dispositivos móviles */
+/* Ajustes generales para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* Reducción del tamaño de fuente general */
+    }
+}
 
 /* Estilos para el título debajo del header en dispositivos móviles */
 @media only screen and (max-width: 768px) {
@@ -296,3 +301,4 @@ button.category-button:hover {
         margin: 8px 0; /* Menor margen entre mensajes */
     }
 }
+

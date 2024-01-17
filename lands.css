@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(#001f3f, #000033);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.neon-header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+.neon-header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.neon-header nav ul li {
+    display: inline;
+}
+
+.neon-header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.neon-header nav ul li a:hover {
+    color: #ff00ff;
+}
+
+.separator {
+    color: #fff;
+    padding: 0 5px;
+}
+
+h1 {
+    font-size: 2.5rem; /* Aumenta el tamaño de la fuente para destacar más */
+    text-align: center;
+    margin-top: 30px; /* Reduce el margen superior */
+    margin-bottom: 20px; /* Añade un margen inferior para separarlo del contenido siguiente */
+    color: #fff; /* Color blanco para que coincida con el diseño general */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Agrega una sombra al texto para destacarlo */
+    position: relative;
+    z-index: 4;
+}
+
+.sun {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 215, 0, 0.9); /* Trasparencia mejorada */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.7);
+}
+
+.planet {
+    width: 52px;
+    height: 52px;
+    background-color: rgba(52, 152, 219, 0.7); /* Trasparencia mejorada */
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 12px rgba(52, 152, 219, 0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    backdrop-filter: blur(5px); /* Agrega un efecto de desenfoque al fondo */
+    transition: transform 0.2s ease-in-out;
+}
+
+.outer-planet {
+    width: 32px;
+    height: 32px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+    transition: transform 0.2s ease-in-out; /* Ajustada la velocidad y la función de temporización */
+}
+
+.planet:hover, .outer-planet:hover {
+    transform: scale(1.4); /* Escala ligeramente reducida para hacer la transición más sutil */
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.95); /* Trasparencia mejorada */
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 400px; /* Ancho máximo del pop-up */
+    text-align: center; /* Centrar el texto */
+}
+
+#popup-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #3498db; /* Color del título */
+}
+
+#popup-description {
+    font-size: 16px;
+    color: #333; /* Color del texto principal */
+    line-height: 1.6; /* Altura de línea mejorada para una mejor legibilidad */
+    margin-top: 10px; /* Espacio superior */
+}
+
+#popup-description p {
+    margin-bottom: 10px; /* Espacio inferior entre párrafos */
+}
+
+#popup-description strong {
+    color: #3498db; /* Color diferente para texto fuerte o destacado */
+}
+
+#popup-description em {
+    font-style: italic; /* Texto en cursiva */
+    color: #e74c3c; /* Color diferente para texto en cursiva */
+}
+
+#popup-description a {
+    color: #1abc9c; /* Color diferente para enlaces */
+    text-decoration: underline; /* Subrayado para enlaces */
+    cursor: pointer; /* Cambia el cursor al pasar sobre enlaces */
+}
+
+#popup-description a:hover {
+    color: #16a085; /* Cambia el color al pasar el ratón sobre enlaces */
+}
+
+
+#close-popup {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3498db; /* Color del botón de cierre */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 14px;
+    transition: background-color 0.3s ease-in-out; /* Transición de color al pasar el ratón */
+}
+
+#close-popup:hover {
+    background-color: #2980b9; /* Cambia el color al pasar el ratón */
+}
+
+#view-details {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #27ae60; /* Color del nuevo botón */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 14px;
+    transition: background-color 0.3s ease-in-out; /* Transición de color al pasar el ratón */
+}
+
+#view-details:hover {
+    background-color: #219d54; /* Cambia el color al pasar el ratón */
+}
+
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000000; /* Color de fondo del contenedor */
+  z-index: -1; /* Asegura que el contenedor esté encima de otros elementos */
+}
+
+/* Estilos opcionales para las partículas */
+/* Cambiar el color de las partículas */
+.particles-js-canvas-el {
+  background-color: transparent;
+}
+
+/* Cambiar el color de las líneas vinculadas */
+.particles-js-canvas-el::after {
+  background-color: rgba(255, 255, 255, 0.4); /* Color y opacidad de las líneas vinculadas */
+}
+
+/* Ajustes generales para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* Reducción del tamaño de fuente general */
+    }
+}
+
+/* Estilos para el título debajo del header en dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .title-section {
+        font-size: 24px; /* Reduce el tamaño del título en dispositivos móviles */
+        margin-top: 10px; /* Menor espacio desde el header */
+        margin-bottom: 10px; /* Menor espacio hacia el chat */
+    }
+}
+
+/* Ajustes para el contenedor principal en dispositivos móviles */
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 90%; /* Reducción del ancho del contenedor en pantallas más pequeñas */
+        padding: 10px; /* Menor espacio interno en dispositivos móviles */
+    }
+
+    /* Reducción del tamaño de fuente para botones en dispositivos móviles */
+    button {
+        font-size: 14px;
+        padding: 8px 12px; /* Reducción del padding en botones para dispositivos móviles */
+    }
+}
+
+/* Ajustes para el header y la navegación en dispositivos móviles */
+@media only screen and (max-width: 480px) {
+    .neon-header nav ul li a {
+        padding: 8px 16px; /* Reducción del padding en enlaces de navegación */
+        font-size: 16px; /* Reducción del tamaño de fuente en enlaces de navegación */
+    }
+}
+
+/* Ajustes para los mensajes del bot en dispositivos móviles */
+@media only screen and (max-width: 480px) {
+    .bot-message {
+        padding: 8px; /* Reducción del espacio alrededor del mensaje */
+        margin: 8px 0; /* Menor margen entre mensajes */
+    }
+}
+
