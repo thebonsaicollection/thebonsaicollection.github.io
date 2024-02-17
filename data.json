@@ -27,7 +27,7 @@
         "contenido": "El siglo XXI presenció un problema apremiante en la Tierra: la escasez de agua y recursos naturales. El calentamiento global y el agotamiento de recursos llevaron a la humanidad a enfrentar una crisis sin precedentes. La supervivencia del planeta estaba en juego.",
         "subtemas": [
             "Agotamiento de recursos naturales",
-            "Contaminación atmosférica y ambiental",
+            "Contaminación",
             "Desarrollo Industrial No Sostenible",
             "Aumento de la población y demanda de recursos"
         ],
@@ -45,7 +45,7 @@
                 "contenido": "La expansión industrial sin controles ambientales adecuados contribuyó a la degradación del medio ambiente, la deforestación y la alteración de ecosistemas vitales, lo que afectó el equilibrio natural del planeta."
             },
             "Aumento de la población y demanda de recursos": {
-                "titulo": "Aumento de la población y demanda de recursos",
+                "titulo": "Aumento de la población",
                 "contenido": "El crecimiento poblacional desmedido y el incremento de la demanda de recursos llevaron a una sobreexplotación de los ecosistemas, agotando las reservas naturales y llevando a la crisis de escasez de recursos."
             }
         }

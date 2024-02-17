@@ -2,29 +2,26 @@ const sun = document.querySelector('.sun');
 const innerPlanets = document.querySelectorAll('.planet');
 const outerPlanets = document.querySelectorAll('.outer-planet');
 
-const numberOfInnerPlanets = 12; // Especificamos que hay 12 planetas internos
+const numberOfInnerPlanets = 12;
 const numberOfOuterPlanets = 36;
-
-const innerRadius = 220;
-const outerRadius = 350;
-
-const innerAngularIncrement = (2 * Math.PI) / numberOfInnerPlanets;
-const outerAngularIncrement = (2 * Math.PI) / numberOfOuterPlanets;
-
-const innerAngularSpeed = 0.01;
-const outerAngularSpeed = 0.01;
 
 function calculatePosition(angle, radius) {
     const centerX = window.innerWidth / 2;
     const centerY = window.innerHeight / 2;
 
-    const x = centerX + (radius * Math.cos(angle));
-    const y = centerY + (radius * Math.sin(angle));
+    const relativeRadius = radius * Math.min(window.innerWidth, window.innerHeight) / 1000;
+
+    const x = centerX + (relativeRadius * Math.cos(angle));
+    const y = centerY + (relativeRadius * Math.sin(angle));
 
     return { x, y };
 }
 
 function animateInnerPlanets() {
+    const innerRadius = 0.5 * Math.min(window.innerWidth, window.innerHeight);
+    const innerAngularIncrement = (2 * Math.PI) / numberOfInnerPlanets;
+    const innerAngularSpeed = 0.01 * Math.min(window.innerWidth, window.innerHeight) / 1000;
+
     let angle = innerAngularSpeed * (performance.now() * 0.005);
 
     for (let i = 0; i < numberOfInnerPlanets; i++) {
@@ -38,6 +35,10 @@ function animateInnerPlanets() {
 }
 
 function animateOuterPlanets() {
+    const outerRadius = 1 * Math.min(window.innerWidth, window.innerHeight);
+    const outerAngularIncrement = (2 * Math.PI) / numberOfOuterPlanets;
+    const outerAngularSpeed = 0.01 * Math.min(window.innerWidth, window.innerHeight) / 1000;
+
     let angle = outerAngularSpeed * (performance.now() * 0.005);
 
     for (let i = 0; i < numberOfOuterPlanets; i++) {
@@ -49,6 +50,15 @@ function animateOuterPlanets() {
         angle += outerAngularIncrement;
     }
 }
+
+function animate() {
+    animateInnerPlanets();
+    animateOuterPlanets();
+    requestAnimationFrame(animate);
+}
+
+animate();
+
 
 function showPopup(landName) {
             const popupTitle = document.getElementById('popup-title');
@@ -71,23 +81,10 @@ function viewDetails() {
     const popupTitle = document.getElementById('popup-title');
     const landName = popupTitle.textContent;
 
-    // Página de detalles común para todas las islas
     const detailsPage = 'detalles_land.html';
 
-    // Redirige a la página de detalles con un parámetro de consulta para identificar la isla
     window.location.href = `${detailsPage}?isla=${encodeURIComponent(landName)}`;
 }
-
-
-
-
-function animate() {
-    animateInnerPlanets();
-    animateOuterPlanets();
-    requestAnimationFrame(animate);
-}
-
-animate();
 
 particlesJS("particles-js", {
   particles: {
@@ -119,7 +116,7 @@ particlesJS("particles-js", {
       random: true,
     },
     line_linked: {
-      enable: false, // Desactiva las líneas vinculadas
+      enable: false,
     },
     move: {
       enable: true,
@@ -128,7 +125,7 @@ particlesJS("particles-js", {
       random: true,
       straight: false,
       out_mode: "out",
-      bounce: false, // Desactiva el rebote
+      bounce: false,
     },
   },
   interactivity: {

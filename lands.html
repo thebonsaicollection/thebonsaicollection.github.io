@@ -18,16 +18,13 @@
             <li><a href="https://www.instagram.com/thebonsaicollection/" target="_blank">Social Media</a></li>
             <li><span class="separator">-</span></li>
             <li><a href="https://linktr.ee/TheBonsaiCollection" target="_blank">About</a></li>
-            <!-- Puedes añadir más enlaces aquí si lo necesitas -->
         </ul>
     </nav>
 </header>
 <body>
-    <!-- Sol -->
+
     <div class="sun" onclick="showPopup('Sun', 'Temperature: 15 million degrees Celsius<br>Hours Active: 24/7<br>Resource Consumption: Unlimited')"></div>
 
-
-    <!-- Órbita interna -->
     <div class="planet" id="planet1" onclick="showPopup('Main-Land 01')">01</div>
     <div class="planet" id="planet2" onclick="showPopup('Main-Land 02')">02</div>
     <div class="planet" id="planet3" onclick="showPopup('Main-Land 03')">03</div>
@@ -48,48 +45,47 @@
     <button id="view-details" onclick="viewDetails()">Ver Detalles</button>
     </div>
 
-
-    <!-- Órbita externa -->
-<div class="planet outer-planet" id="outer-planet1" onclick="showPopup('Mini-Land 01', 'This is information about Planet 01.')">13</div>
-<div class="planet outer-planet" id="outer-planet2" onclick="showPopup('Mini-Land 02', 'This is information about Planet 02.')">14</div>
-<div class="planet outer-planet" id="outer-planet3" onclick="showPopup('Mini-Land 03', 'This is information about Planet 03.')">15</div>
-<div class="planet outer-planet" id="outer-planet4" onclick="showPopup('Mini-Land 04', 'This is information about Planet 04.')">16</div>
-<div class="planet outer-planet" id="outer-planet5" onclick="showPopup('Mini-Land 05', 'This is information about Planet 05.')">17</div>
-<div class="planet outer-planet" id="outer-planet6" onclick="showPopup('Mini-Land 06', 'This is information about Planet 06.')">18</div>
-<div class="planet outer-planet" id="outer-planet7" onclick="showPopup('Mini-Land 07', 'This is information about Planet 07.')">19</div>
-<div class="planet outer-planet" id="outer-planet8" onclick="showPopup('Mini-Land 08', 'This is information about Planet 08.')">20</div>
-<div class="planet outer-planet" id="outer-planet9" onclick="showPopup('Mini-Land 09', 'This is information about Planet 09.')">21</div>
-<div class="planet outer-planet" id="outer-planet10" onclick="showPopup('Mini-Land 10', 'This is information about Planet 10.')">22</div>
-<div class="planet outer-planet" id="outer-planet11" onclick="showPopup('Mini-Land 11', 'This is information about Planet 11.')">23</div>
-<div class="planet outer-planet" id="outer-planet12" onclick="showPopup('Mini-Land 12', 'This is information about Planet 12.')">24</div>
-<div class="planet outer-planet" id="outer-planet13" onclick="showPopup('Mini-Land 13', 'This is information about Planet 13.')">25</div>
-<div class="planet outer-planet" id="outer-planet14" onclick="showPopup('Mini-Land 14', 'This is information about Planet 14.')">26</div>
-<div class="planet outer-planet" id="outer-planet15" onclick="showPopup('Mini-Land 15', 'This is information about Planet 15.')">27</div>
-<div class="planet outer-planet" id="outer-planet16" onclick="showPopup('Mini-Land 16', 'This is information about Planet 16.')">28</div>
-<div class="planet outer-planet" id="outer-planet17" onclick="showPopup('Mini-Land 17', 'This is information about Planet 17.')">29</div>
-<div class="planet outer-planet" id="outer-planet18" onclick="showPopup('Mini-Land 18', 'This is information about Planet 18.')">30</div>
-<div class="planet outer-planet" id="outer-planet19" onclick="showPopup('Mini-Land 19', 'This is information about Planet 19.')">31</div>
-<div class="planet outer-planet" id="outer-planet20" onclick="showPopup('Mini-Land 20', 'This is information about Planet 20.')">32</div>
-<div class="planet outer-planet" id="outer-planet21" onclick="showPopup('Mini-Land 21', 'This is information about Planet 21.')">33</div>
-<div class="planet outer-planet" id="outer-planet22" onclick="showPopup('Mini-Land 22', 'This is information about Planet 22.')">34</div>
-<div class="planet outer-planet" id="outer-planet23" onclick="showPopup('Mini-Land 23', 'This is information about Planet 23.')">35</div>
-<div class="planet outer-planet" id="outer-planet24" onclick="showPopup('Mini-Land 24', 'This is information about Planet 24.')">36</div>
-<div class="planet outer-planet" id="outer-planet25" onclick="showPopup('Mini-Land 25', 'This is information about Planet 25.')">37</div>
-<div class="planet outer-planet" id="outer-planet26" onclick="showPopup('Mini-Land 26', 'This is information about Planet 26.')">38</div>
-<div class="planet outer-planet" id="outer-planet27" onclick="showPopup('Mini-Land 27', 'This is information about Planet 27.')">39</div>
-<div class="planet outer-planet" id="outer-planet28" onclick="showPopup('Mini-Land 28', 'This is information about Planet 28.')">40</div>
-<div class="planet outer-planet" id="outer-planet29" onclick="showPopup('Mini-Land 29', 'This is information about Planet 29.')">41</div>
-<div class="planet outer-planet" id="outer-planet30" onclick="showPopup('Mini-Land 30', 'This is information about Planet 30.')">42</div>
-<div class="planet outer-planet" id="outer-planet31" onclick="showPopup('Mini-Land 31', 'This is information about Planet 31.')">43</div>
-<div class="planet outer-planet" id="outer-planet32" onclick="showPopup('Mini-Land 32', 'This is information about Planet 32.')">44</div>
-<div class="planet outer-planet" id="outer-planet33" onclick="showPopup('Mini-Land 33', 'This is information about Planet 33.')">45</div>
-<div class="planet outer-planet" id="outer-planet34" onclick="showPopup('Mini-Land 34', 'This is information about Planet 34.')">46</div>
-<div class="planet outer-planet" id="outer-planet35" onclick="showPopup('Mini-Land 35', 'This is information about Planet 35.')">47</div>
-<div class="planet outer-planet" id="outer-planet36" onclick="showPopup('Mini-Land 36', 'This is information about Planet 36.')">48</div>
+    <div class="planet outer-planet" id="outer-planet1" onclick="showPopup('Mini-Land 01', 'This is information about Planet 01.')">13</div>
+    <div class="planet outer-planet" id="outer-planet2" onclick="showPopup('Mini-Land 02', 'This is information about Planet 02.')">14</div>
+    <div class="planet outer-planet" id="outer-planet3" onclick="showPopup('Mini-Land 03', 'This is information about Planet 03.')">15</div>
+    <div class="planet outer-planet" id="outer-planet4" onclick="showPopup('Mini-Land 04', 'This is information about Planet 04.')">16</div>
+    <div class="planet outer-planet" id="outer-planet5" onclick="showPopup('Mini-Land 05', 'This is information about Planet 05.')">17</div>
+    <div class="planet outer-planet" id="outer-planet6" onclick="showPopup('Mini-Land 06', 'This is information about Planet 06.')">18</div>
+    <div class="planet outer-planet" id="outer-planet7" onclick="showPopup('Mini-Land 07', 'This is information about Planet 07.')">19</div>
+    <div class="planet outer-planet" id="outer-planet8" onclick="showPopup('Mini-Land 08', 'This is information about Planet 08.')">20</div>
+    <div class="planet outer-planet" id="outer-planet9" onclick="showPopup('Mini-Land 09', 'This is information about Planet 09.')">21</div>
+    <div class="planet outer-planet" id="outer-planet10" onclick="showPopup('Mini-Land 10', 'This is information about Planet 10.')">22</div>
+    <div class="planet outer-planet" id="outer-planet11" onclick="showPopup('Mini-Land 11', 'This is information about Planet 11.')">23</div>
+    <div class="planet outer-planet" id="outer-planet12" onclick="showPopup('Mini-Land 12', 'This is information about Planet 12.')">24</div>
+    <div class="planet outer-planet" id="outer-planet13" onclick="showPopup('Mini-Land 13', 'This is information about Planet 13.')">25</div>
+    <div class="planet outer-planet" id="outer-planet14" onclick="showPopup('Mini-Land 14', 'This is information about Planet 14.')">26</div>
+    <div class="planet outer-planet" id="outer-planet15" onclick="showPopup('Mini-Land 15', 'This is information about Planet 15.')">27</div>
+    <div class="planet outer-planet" id="outer-planet16" onclick="showPopup('Mini-Land 16', 'This is information about Planet 16.')">28</div>
+    <div class="planet outer-planet" id="outer-planet17" onclick="showPopup('Mini-Land 17', 'This is information about Planet 17.')">29</div>
+    <div class="planet outer-planet" id="outer-planet18" onclick="showPopup('Mini-Land 18', 'This is information about Planet 18.')">30</div>
+    <div class="planet outer-planet" id="outer-planet19" onclick="showPopup('Mini-Land 19', 'This is information about Planet 19.')">31</div>
+    <div class="planet outer-planet" id="outer-planet20" onclick="showPopup('Mini-Land 20', 'This is information about Planet 20.')">32</div>
+    <div class="planet outer-planet" id="outer-planet21" onclick="showPopup('Mini-Land 21', 'This is information about Planet 21.')">33</div>
+    <div class="planet outer-planet" id="outer-planet22" onclick="showPopup('Mini-Land 22', 'This is information about Planet 22.')">34</div>
+    <div class="planet outer-planet" id="outer-planet23" onclick="showPopup('Mini-Land 23', 'This is information about Planet 23.')">35</div>
+    <div class="planet outer-planet" id="outer-planet24" onclick="showPopup('Mini-Land 24', 'This is information about Planet 24.')">36</div>
+    <div class="planet outer-planet" id="outer-planet25" onclick="showPopup('Mini-Land 25', 'This is information about Planet 25.')">37</div>
+    <div class="planet outer-planet" id="outer-planet26" onclick="showPopup('Mini-Land 26', 'This is information about Planet 26.')">38</div>
+    <div class="planet outer-planet" id="outer-planet27" onclick="showPopup('Mini-Land 27', 'This is information about Planet 27.')">39</div>
+    <div class="planet outer-planet" id="outer-planet28" onclick="showPopup('Mini-Land 28', 'This is information about Planet 28.')">40</div>
+    <div class="planet outer-planet" id="outer-planet29" onclick="showPopup('Mini-Land 29', 'This is information about Planet 29.')">41</div>
+    <div class="planet outer-planet" id="outer-planet30" onclick="showPopup('Mini-Land 30', 'This is information about Planet 30.')">42</div>
+    <div class="planet outer-planet" id="outer-planet31" onclick="showPopup('Mini-Land 31', 'This is information about Planet 31.')">43</div>
+    <div class="planet outer-planet" id="outer-planet32" onclick="showPopup('Mini-Land 32', 'This is information about Planet 32.')">44</div>
+    <div class="planet outer-planet" id="outer-planet33" onclick="showPopup('Mini-Land 33', 'This is information about Planet 33.')">45</div>
+    <div class="planet outer-planet" id="outer-planet34" onclick="showPopup('Mini-Land 34', 'This is information about Planet 34.')">46</div>
+    <div class="planet outer-planet" id="outer-planet35" onclick="showPopup('Mini-Land 35', 'This is information about Planet 35.')">47</div>
+    <div class="planet outer-planet" id="outer-planet36" onclick="showPopup('Mini-Land 36', 'This is information about Planet 36.')">48</div>
     
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <div id="particles-js"></div>
     <script src="lands.js"></script>
+
 </body>
 </html>
