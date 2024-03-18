@@ -1,3 +1,14 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const intro = document.getElementById('intro');
+
+    setTimeout(function() {
+        intro.style.opacity = '0';
+        setTimeout(function() {
+            intro.style.display = 'none';
+        }, 2000);
+    }, 2100);
+});
+
 function loadData(category, callback) {
     return fetch('data.json')
         .then(response => response.json())
@@ -84,9 +95,11 @@ function displayErrorMessage(message) {
     chatMessages.scrollTop = chatMessages.scrollHeight; 
 }
 
-function typeWriterEffect(text, element) {
+let firstCall = true;
+
+function typeWriterEffect(text, element, initialDelay = 2000) {
     let index = 0;
-    const speed = 20;
+    const speed = 15;
 
     function type() {
         if (index < text.length) {
@@ -96,8 +109,16 @@ function typeWriterEffect(text, element) {
         }
     }
 
-    element.innerHTML = '';
-    type();
+    if (initialDelay > 0 && firstCall) {
+        firstCall = false;
+        setTimeout(() => {
+            element.innerHTML = '';
+            type();
+        }, initialDelay);
+    } else {
+        element.innerHTML = '';
+        type();
+    }
 }
 
 const categoryButtons = document.querySelectorAll('.category-button');
@@ -126,7 +147,7 @@ particlesJS("particles-js", {
             }
         },
         "color": {
-            "value": "#ffffff",
+            "value": "#ffffff"
         },
         "shape": {
             "type": "circle"
@@ -160,12 +181,12 @@ particlesJS("particles-js", {
             "out_mode": "out"
         }
     },
-     "interactivity": {
+    "interactivity": {
         "detect_on": "canvas",
         "events": {
             "onhover": {
                 "enable": true,
-                "mode": "connect"
+                "mode": "grab"
             },
             "onclick": {
                 "enable": true,
@@ -174,7 +195,7 @@ particlesJS("particles-js", {
             "resize": true
         },
         "modes": {
-            "connect": {
+            "grab": {
                 "distance": 75,
                 "line_linked": {
                     "opacity": 0.1,
@@ -187,4 +208,5 @@ particlesJS("particles-js", {
         }
     }
 });
+
 

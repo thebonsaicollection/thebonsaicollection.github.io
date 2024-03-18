@@ -1,78 +1,78 @@
 {
-    "tbc_inicio": {
-        "titulo": "The Bonsai Collection",
-        "contenido": "¡Bienvenido a The Bonsai Collection! Un universo único donde el arte, la creatividad y la tecnología se entrelazan en un metaverso vanguardista potenciado por la tecnología blockchain. ",
-        "subtemas": [
-            "Concepto de Arte Digital y Metaverso Sci-Fi",
-            "Coleccionismo, Rareza y Metaverso Narrativo",
-            "Comunidad Interactiva en el Metaverso"
-        ],
-        "subtemasData": {
-            "Concepto de Arte Digital y Metaverso Sci-Fi": {
-                "titulo": "Concepto de Arte Digital y Metaverso Sci-Fi",
-                "contenido": "The Bonsai Collection es una plataforma pionera que fusiona el arte digital con la narrativa de un metaverso futurista y sci-fi. Ofrece una exclusiva variedad de obras de arte digital inspiradas en la elegancia y belleza del arte del bonsái japonés. Cada pieza es única, creada digitalmente y respaldada por la tecnología de los NFT (Tokens No Fungibles)"
-            },
-            "Coleccionismo, Rareza y Metaverso Narrativo": {
-                "titulo": "Coleccionismo, Rareza y Metaverso Narrativo",
-                "contenido": "Esta colección representa más que simples piezas de arte digital. Cada NFT en The Bonsai Collection es una representación exclusiva dentro del metaverso, lo que le otorga singularidad, autenticidad y un lugar en la narrativa de la nave espacial TBC-17. Los coleccionistas encuentran atractivo el ser parte de este metaverso y poseer estas piezas únicas que tienen su propia historia y valor en este entorno narrativo."
-            },
-            "Comunidad Interactiva en el Metaverso": {
-                "titulo": "Comunidad Interactiva en el Metaverso",
-                "contenido": "The Bonsai Collection no solo es un escaparate de arte digital, sino un lugar donde los coleccionistas, entusiastas del arte y miembros de la comunidad participan activamente en este metaverso sci-fi. Con la inclusión de la historia de la nave estelar y el invernadero que genera energía perpetua, se crea un universo narrativo interactivo y en constante evolución que atrae a una comunidad comprometida y creativa, ofreciendo una experiencia única en el mundo del arte digital y el coleccionismo."
-            }
-        }    
-    },
+"tbc_inicio": {
+"titulo": "The Bonsai Collection",
+"contenido": "Welcome to The Bonsai Collection! A unique universe where art, creativity, and technology intertwine in a cutting-edge metaverse powered by blockchain technology. Discover the TBC universe in our Interactive Wiki.",
+"subtemas": [
+"Concept of Digital Art and Sci-Fi Metaverse",
+"Collecting, Rarity, and Narrative Metaverse",
+"Interactive Community in the Metaverse"
+],
+"subtemasData": {
+"Concept of Digital Art and Sci-Fi Metaverse": {
+"titulo": "Concept of Digital Art and Sci-Fi Metaverse",
+"contenido": "The Bonsai Collection is a pioneering platform that merges digital art with the narrative of a futuristic sci-fi metaverse. It offers a unique variety of digital artworks inspired by the elegance and beauty of Japanese bonsai art. Each piece is unique, digitally created, and backed by NFT (Non-Fungible Token) technology."
+},
+"Collecting, Rarity, and Narrative Metaverse": {
+"titulo": "Collecting, Rarity, and Narrative Metaverse",
+"contenido": "This collection represents more than just digital art pieces. Each NFT in The Bonsai Collection is an exclusive representation within the metaverse, granting it uniqueness, authenticity, and a place in the narrative of the TBC-17 spaceship. Collectors find appeal in being part of this metaverse and owning these unique pieces that have their own story and value in this narrative environment."
+},
+"Interactive Community in the Metaverse": {
+"titulo": "Interactive Community in the Metaverse",
+"contenido": "The Bonsai Collection is not just a showcase of digital art but a place where collectors, art enthusiasts, and community members actively engage in this sci-fi metaverse. With the inclusion of the starship's history and the perpetually generating energy greenhouse, an interactive and ever-evolving narrative universe is created, attracting a committed and creative community, offering a unique experience in the world of digital art and collecting."
+}
+}
+},
     "problema_global": {
-        "titulo": "Problema Global",
-        "contenido": "El siglo XXI presenció un problema apremiante en la Tierra: la escasez de agua y recursos naturales. El calentamiento global y el agotamiento de recursos llevaron a la humanidad a enfrentar una crisis sin precedentes. La supervivencia del planeta estaba en juego.",
-        "subtemas": [
-            "Agotamiento de recursos naturales",
-            "Contaminación",
-            "Desarrollo Industrial No Sostenible",
-            "Aumento de la población y demanda de recursos"
-        ],
-        "subtemasData": {
-            "Agotamiento de recursos naturales": {
-                "titulo": "Agotamiento de recursos naturales",
-                "contenido": "El agotamiento de recursos como combustibles fósiles, agua dulce y minerales esenciales llevó a la humanidad a una crisis de abastecimiento, intensificando la competencia y el conflicto por estos recursos escasos."
-            },
-            "Contaminación atmosférica y ambiental": {
-                "titulo": "Contaminación atmosférica y ambiental",
-                "contenido": "La emisión descontrolada de gases de efecto invernadero y la contaminación del aire, agua y suelo deterioraron la calidad del medio ambiente, llevando a un aumento significativo de la temperatura global y al cambio climático."
-            },
-            "Desarrollo Industrial No Sostenible": {
-                "titulo": "Desarrollo Industrial No Sostenible",
-                "contenido": "La expansión industrial sin controles ambientales adecuados contribuyó a la degradación del medio ambiente, la deforestación y la alteración de ecosistemas vitales, lo que afectó el equilibrio natural del planeta."
-            },
-            "Aumento de la población y demanda de recursos": {
-                "titulo": "Aumento de la población",
-                "contenido": "El crecimiento poblacional desmedido y el incremento de la demanda de recursos llevaron a una sobreexplotación de los ecosistemas, agotando las reservas naturales y llevando a la crisis de escasez de recursos."
-            }
-        }
-    },
-    "creacion_tbc": {
-    "titulo": "Creación de TBC-17",
-    "contenido": "La creación de la nave TBC-17 se erige como la epítome de la ciencia y la innovación, surgiendo como una respuesta a la crisis global de recursos y cambio climático mundial. En un esfuerzo en conjunto de las potencias gubernamentales más importantes de la Tierra, surge este proyecto clasificado. Concebida como un monumento a la ingeniería, la nave TBC-17 alberga en su interior un avanzado invernadero y tecnología de inteligencia artificial con 12 Main Lands y 36 Mini Lands en su interior. Esta nave posee en el centro de su invernadero un sol artificial, alrededor del que las islas orbitan y el cual constituye la fuente perpetua de energía que sustenta un ecosistema sostenible para la tripulación a bordo.",
+    "titulo": "Global Problem",
+    "contenido": "The 21st century witnessed an urgent problem on Earth: the scarcity of water and natural resources. Global warming and resource depletion led humanity to face an unprecedented crisis. The survival of the planet was at stake.",
     "subtemas": [
-            "Diseño y Características",
-            "Invernadero y AI",
-            "Misiones de Exploración"
-        ],
+        "Depletion of Natural Resources",
+        "Pollution",
+        "Unsustainable Industrial Development",
+        "Population Growth and Resource Demand"
+    ],
     "subtemasData": {
-        "Diseño y Características": {
-            "titulo": "Diseño y Características",
-            "contenido": "El diseño de la TBC-17 incorpora una estructura aerodinámica y resistente que permite la navegación interplanetaria. Sus sistemas de propulsión avanzados y su capacidad para albergar a la tripulación durante largos períodos la convierten en una obra maestra tecnológica."
+        "Depletion of Natural Resources": {
+            "titulo": "Depletion of Natural Resources",
+            "contenido": "The depletion of resources such as fossil fuels, freshwater, and essential minerals led humanity to a supply crisis, intensifying competition and conflict over these scarce resources."
         },
-        "Invernadero y AI": {
-            "titulo": "Invernadero y AI",
-            "contenido": "El invernadero dentro de la TBC-17 es un entorno cuidadosamente controlado que alberga una variedad de especies vegetales. La inteligencia artificial integrada supervisa y regula el ciclo de vida de las plantas, manteniendo un equilibrio ecológico esencial para la sostenibilidad de la nave y la tripulación."
+        "Contamination": {
+            "titulo": "Air and Environmental Pollution",
+            "contenido": "Uncontrolled emission of greenhouse gases and pollution of air, water, and soil deteriorated the quality of the environment, leading to a significant increase in global temperature and climate change."
         },
-        "Misiones de Exploración": {
-            "titulo": "Misiones de Exploración",
-            "contenido": "Las misiones de exploración de la TBC-17 tienen como objetivo descubrir nuevos planetas, recursos valiosos y posibles hábitats para la humanidad. Utilizando tecnología de punta, drones y naves auxiliares, la nave lleva a cabo misiones de reconocimiento y análisis en el espacio profundo. Generalmente las misiones suelen explorar asteroides en movimiento, lunas y planetas, entre otros cuerpos espaciales"
+        "Unsustainable Industrial Development": {
+            "titulo": "Unsustainable Industrial Development",
+            "contenido": "Industrial expansion without adequate environmental controls contributed to environmental degradation, deforestation, and alteration of vital ecosystems, affecting the planet's natural balance."
+        },
+        "Population Growth and Resource Demand": {
+            "titulo": "Population Growth",
+            "contenido": "Unbridled population growth and increased demand for resources led to overexploitation of ecosystems, depleting natural reserves and leading to a resource scarcity crisis."
         }
     }
-    },
+},
+   "creacion_tbc": {
+    "titulo": "Creation of TBC-17",
+    "contenido": "The creation of the TBC-17 spacecraft stands as the epitome of science and innovation, emerging as a response to the global crisis of resources and climate change. In a joint effort of the most important governmental powers on Earth, this classified project arises. Conceived as a monument to engineering, the TBC-17 spacecraft houses an advanced greenhouse and artificial intelligence technology with 12 Main Lands and 36 Mini Lands inside. This ship has an artificial sun at the center of its greenhouse, around which the islands orbit and which constitutes the perpetual source of energy that sustains a sustainable ecosystem for the crew on board.",
+    "subtemas": [
+        "Design and Characteristics",
+        "Greenhouse and AI",
+        "Exploration Missions"
+    ],
+    "subtemasData": {
+        "Design and Characteristics": {
+            "titulo": "Design and Characteristics",
+            "contenido": "The design of the TBC-17 incorporates an aerodynamic and sturdy structure that allows for interplanetary navigation. Its advanced propulsion systems and its ability to accommodate the crew for long periods make it a technological masterpiece."
+        },
+        "Greenhouse and AI": {
+            "titulo": "Greenhouse and AI",
+            "contenido": "The greenhouse within the TBC-17 is a carefully controlled environment that houses a variety of plant species. The integrated artificial intelligence supervises and regulates the life cycle of the plants, maintaining an essential ecological balance for the sustainability of the ship and the crew."
+        },
+        "Exploration Missions": {
+            "titulo": "Exploration Missions",
+            "contenido": "The exploration missions of the TBC-17 aim to discover new planets, valuable resources, and possible habitats for humanity. Using cutting-edge technology, drones, and auxiliary spacecraft, the ship carries out reconnaissance and analysis missions in deep space. Generally, missions explore moving asteroids, moons, and planets, among other celestial bodies."
+        }
+    }
+},
     "invernadero_tbc": {
     "titulo": "Invernadero",
     "contenido": "TBC-17 alberga en su interior un avanzado invernadero y tecnología de inteligencia artificial con 12 Main Lands y 36 Mini Lands. Esta nave posee en el centro de su invernadero un sol artificial, alrededor del que las islas orbitan y el cual constituye la fuente perpetua de energía que sustenta un ecosistema sostenible para la tripulación.",
@@ -106,58 +106,58 @@
         }
     }
 },
-        "ia_tech": {
-    "titulo": "Inteligencia Artificial En TBC-17",
-    "contenido": "La IA desempeñó un papel crucial en el funcionamiento y la gestión de la nave espacial TBC, asegurando un control inteligente y eficiente de los sistemas vitales.",
+"ia_tech": {
+    "titulo": "Artificial Intelligence in TBC-17",
+    "contenido": "AI played a crucial role in the operation and management of the TBC spacecraft, ensuring intelligent and efficient control of vital systems.",
     "subtemas": [
-            "Control Integral",
-            "Adaptabilidad y Aprendizaje",
-            "Apoyo a la tripulación"
-        ],
+        "Integral Control",
+        "Adaptability and Learning",
+        "Crew Support"
+    ],
     "subtemasData": {
-        "Control Integral": {
-            "titulo": "Control Integral",
-            "contenido": "La IA supervisa y gestiona todos los aspectos de la nave espacial, incluido el invernadero, la generación de energía, la gestión del agua y el oxígeno, la navegación y las comunicaciones."
+        "Integral Control": {
+            "titulo": "Integral Control",
+            "contenido": "AI supervises and manages all aspects of the spacecraft, including the greenhouse, power generation, water and oxygen management, navigation, and communications."
         },
-        "Adaptabilidad y Aprendizaje": {
-            "titulo": "Adaptabilidad y Aprendizaje",
-            "contenido": "Diseñada para aprender y adaptarse a las condiciones espaciales cambiantes, la IA emplea algoritmos de aprendizaje automático para mejorar su eficiencia con el tiempo. Esta optimización garantiza la maximización de los recursos y maximiza la eficacia de la nave espacial."
+        "Adaptability and Learning": {
+            "titulo": "Adaptability and Learning",
+            "contenido": "Designed to learn and adapt to changing space conditions, AI employs machine learning algorithms to improve its efficiency over time. This optimization ensures the maximization of resources and maximizes the effectiveness of the spacecraft."
         },
-        "Apoyo a la tripulación": {
-            "titulo": "Apoyo a la tripulación",
-            "contenido": "La gestión del invernadero se basaba en la integración de sensores y sistemas de control automáticos. Estos sistemas monitoreaban constantemente las condiciones ambientales como la humedad, la temperatura, la iluminación y los niveles de nutrientes para garantizar un crecimiento óptimo de las plantas."
+        "Crew Support": {
+            "titulo": "Crew Support",
+            "contenido": "Greenhouse management relied on the integration of sensors and automatic control systems. These systems constantly monitored environmental conditions such as humidity, temperature, lighting, and nutrient levels to ensure optimal plant growth."
         }
     }
 },
     "recursos_economia": {
-        "titulo": "Recursos y Economía",
-        "contenido": "En TBC, el recurso más valioso es la energía, utilizada para activar todos los sistemas de la nave. No existe dinero; en su lugar, todo se intercambia por energía. Además, el agua y el oxígeno se generan y se intercambian en un ciclo vital que mantiene el ecosistema en funcionamiento. La gestión de datos y la seguridad se llevan a cabo mediante una tecnología blockchain especializada que opera en la nave. Una máquina dedicada genera Turing completos y aloja registros precisos de todos los datos de la nave. Esta blockchain automatizada garantiza la integridad, seguridad y accesibilidad exacta de los registros de la nave, asegurando un funcionamiento eficiente y confiable del ecosistema.",
-        "subtemas": [
-            "Energía",
-            "Agua",
-            "Oxigeno",
-            "Recursos y Comercio"
-        ],
+    "titulo": "Resources and Economy",
+    "contenido": "In TBC, the most valuable resource is energy, used to power all systems of the spacecraft. There is no money; instead, everything is exchanged for energy. Additionally, water and oxygen are generated and exchanged in a vital cycle that keeps the ecosystem functioning. Data management and security are carried out using specialized blockchain technology operating on the spacecraft. A dedicated machine generates Turing complete and hosts accurate records of all spacecraft data. This automated blockchain ensures the integrity, security, and exact accessibility of spacecraft records, ensuring efficient and reliable ecosystem operation.",
+    "subtemas": [
+        "Energy",
+        "Water",
+        "Oxygen",
+        "Resources and Trade"
+    ],
     "subtemasData": {
-        "Energía": {
-            "titulo": "Energía y Economía",
-            "contenido": "La energía, denominada 'TBC-Energy', es el recurso primordial en la economía de la TBC. Es utilizada para activar y mantener todos los sistemas vitales de la nave."
+        "Energy": {
+            "titulo": "Energy",
+            "contenido": "Energy, referred to as 'TBC-Energy', is the primary resource in the TBC economy. It is used to power and maintain all vital systems of the spacecraft."
         },
-        "Agua": {
-            "titulo": "Agua",
-            "contenido": "El agua, recurso vital para el ecosistema, se produce mediante avanzados sistemas de purificación y reciclaje en la nave. Los usuarios pueden adquirir agua para su consumo o para contribuir al equilibrio del ecosistema devolviéndola para su posterior transformación en energía."
+        "Water": {
+            "titulo": "Water",
+            "contenido": "Water, a vital resource for the ecosystem, is produced through advanced purification and recycling systems on the spacecraft. Users can acquire water for consumption or to contribute to ecosystem balance by returning it for subsequent transformation into energy."
         },
-        "Oxigeno": {
-            "titulo": "Oxigeno",
-            "contenido": "El oxígeno, esencial para la respiración y el equilibrio del ecosistema, es producido mediante sistemas especializados en la nave. Los residentes pueden adquirirlo para su uso o devolverlo al ecosistema para su transformación en energía una vez utilizado."
+        "Oxygen": {
+            "titulo": "Oxygen",
+            "contenido": "Oxygen, essential for respiration and ecosystem balance, is produced by specialized systems on the spacecraft. Residents can acquire it for use or return it to the ecosystem for transformation into energy once used."
         },
-        "Recursos y Comercio": {
-            "titulo": "Recursos y Comercio",
-            "contenido": "El intercambio y la utilización de recursos se basan en un ciclo vital. Los recursos son adquiridos, usados y luego devueltos al sistema para su posterior conversión en energía."
+        "Resources and Trade": {
+            "titulo": "Resources and Trade",
+            "contenido": "The exchange and utilization of resources are based on a vital cycle. Resources are acquired, used, and then returned to the system for subsequent conversion into energy."
         }
     }
 },
-    "mision_exploracion": {
+ "mision_exploracion": {
         "titulo": "Misión y Exploración",
         "contenido": "La nave TBC tiene como misión principal explorar planetas y asteroides en el sistema solar, en busca de recursos vitales como agua, minerales y otros elementos que puedan ser valiosos para la supervivencia en la Tierra.",
         "subtemas": [
@@ -185,35 +185,36 @@
     }
 },
     "island_cubes": {
-        "titulo": "Bonsai Islands",
-        "contenido": "Las Islas son estructuras en forma de cubo dentro de la nave TBC, cada una representando un ambiente autónomo y vital para el ecosistema de la nave.",
-        "subtemas": [
-            "Estructura de las Islas",
-            "Producción y Comercio",
-            "Arte NFT y Cultura"
-        ],
-        "subtemasData": {
-        "Estructura de las Islas": {
-            "titulo": "Estructura de las Islas",
-            "contenido": "Las Islas son estructuras fundamentales dentro de la nave TBC, cada una diseñada como un cubo autónomo y vital para el ecosistema de la nave. Estas islas representan diferentes ambientes, cada uno con características específicas que contribuyen al equilibrio y la sostenibilidad del entorno cerrado de la nave."
+    "titulo": "Bonsai Islands",
+    "contenido": "The Islands are cube-shaped structures within the TBC spacecraft, each representing an autonomous and vital environment for the spacecraft's ecosystem.",
+    "subtemas": [
+        "Island Structure",
+        "Production and Trade",
+        "NFT Art and Culture"
+    ],
+    "subtemasData": {
+        "Island Structure": {
+            "titulo": "Island Structure",
+            "contenido": "The Islands are fundamental structures within the TBC spacecraft, each designed as an autonomous cube vital to the spacecraft's ecosystem. These islands represent different environments, each with specific characteristics that contribute to the balance and sustainability of the spacecraft's closed environment."
         },
-        "Producción y Comercio": {
-            "titulo": "Producción y Comercio",
-            "contenido": "El aspecto de producción y comercio en la nave TBC es un sistema interno que permite la generación, intercambio y gestión de recursos. Los isla funcionan como centros de producción, cultivando alimentos, generando energía, purificando agua y produciendo oxígeno. Además, estos recursos pueden ser intercambiados y gestionados dentro de la comunidad de la nave."
+        "Production and Trade": {
+            "titulo": "Production and Trade",
+            "contenido": "The production and trade aspect in the TBC spacecraft is an internal system that allows for resource generation, exchange, and management. The islands function as production centers, cultivating food, generating energy, purifying water, and producing oxygen. Additionally, these resources can be exchanged and managed within the spacecraft community."
         },
-        "Arte NFT y Cultura": {
-            "titulo": "Arte NFT y Cultura",
-            "contenido": "El Arte NFT y la Cultura en la TBC se entrelazan con la creatividad y la narrativa del metaverso. Cada isla alberga obras de arte digital únicas respaldadas por tecnología NFT. La cultura en la nave se nutre de la expresión artística, la historia de las obras y su papel en la comunidad, creando así un entorno cultural en constante evolución dentro del metaverso de la TBC."
+        "NFT Art and Culture": {
+            "titulo": "NFT Art and Culture",
+            "contenido": "NFT Art and Culture in TBC are intertwined with the creativity and narrative of the metaverse. Each island hosts unique digital artworks backed by NFT technology. The culture on the spacecraft is nurtured by artistic expression, the history of the artworks, and their role in the community, creating a culturally evolving environment within the TBC metaverse."
         }
     }
 },
-    "island_": {
-        "titulo": "Bonsai",
-        "contenido": "Las Islas son estructuras en forma de cubo dentro de la nave TBC, cada una representando un ambiente autónomo y vital para el ecosistema de la nave.",
-        "subtemas": [
-            "Estructura de las Islas",
-            "Producción y Comercio",
-            "Arte NFT y Cultura"
-        ]
-    }
+"island_": {
+    "titulo": "Bonsai",
+    "contenido": "The Islands are cube-shaped structures within the TBC spacecraft, each representing an autonomous and vital environment for the spacecraft's ecosystem.",
+    "subtemas": [
+        "Island Structure",
+        "Production and Trade",
+        "NFT Art and Culture"
+    ]
+}
+
 }

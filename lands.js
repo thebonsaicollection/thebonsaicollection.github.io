@@ -18,7 +18,7 @@ function calculatePosition(angle, radius) {
 }
 
 function animateInnerPlanets() {
-    const innerRadius = 0.5 * Math.min(window.innerWidth, window.innerHeight);
+    const innerRadius = 0.3 * Math.min(window.innerWidth, window.innerHeight);
     const innerAngularIncrement = (2 * Math.PI) / numberOfInnerPlanets;
     const innerAngularSpeed = 0.01 * Math.min(window.innerWidth, window.innerHeight) / 1000;
 
@@ -35,7 +35,7 @@ function animateInnerPlanets() {
 }
 
 function animateOuterPlanets() {
-    const outerRadius = 1 * Math.min(window.innerWidth, window.innerHeight);
+    const outerRadius = 0.55 * Math.min(window.innerWidth, window.innerHeight);
     const outerAngularIncrement = (2 * Math.PI) / numberOfOuterPlanets;
     const outerAngularSpeed = 0.01 * Math.min(window.innerWidth, window.innerHeight) / 1000;
 
@@ -66,7 +66,7 @@ function showPopup(landName) {
             const popup = document.getElementById('popup');
 
             popupTitle.textContent = landName;
-            popupDescription.textContent = `Conoce más información detallada sobre ${landName} en el panel particular de la isla`;
+            popupDescription.textContent = `Discover more detailed information about ${landName} on the specific island panel.`;
 
             popup.style.display = 'block';
         }
@@ -83,7 +83,7 @@ function viewDetails() {
 
     const detailsPage = 'detalles_land.html';
 
-    window.location.href = `${detailsPage}?isla=${encodeURIComponent(landName)}`;
+    window.location.href = `${detailsPage}?Land=${encodeURIComponent(landName)}`;
 }
 
 particlesJS("particles-js", {
