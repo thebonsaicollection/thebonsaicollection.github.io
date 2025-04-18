@@ -18,7 +18,7 @@ function calculatePosition(angle, radius) {
 }
 
 function animateInnerPlanets() {
-    const innerRadius = 0.3 * Math.min(window.innerWidth, window.innerHeight);
+    const innerRadius = 0.30 * Math.min(window.innerWidth, window.innerHeight);
     const innerAngularIncrement = (2 * Math.PI) / numberOfInnerPlanets;
     const innerAngularSpeed = 0.01 * Math.min(window.innerWidth, window.innerHeight) / 1000;
 
@@ -35,7 +35,7 @@ function animateInnerPlanets() {
 }
 
 function animateOuterPlanets() {
-    const outerRadius = 0.55 * Math.min(window.innerWidth, window.innerHeight);
+    const outerRadius = 0.50 * Math.min(window.innerWidth, window.innerHeight);
     const outerAngularIncrement = (2 * Math.PI) / numberOfOuterPlanets;
     const outerAngularSpeed = 0.01 * Math.min(window.innerWidth, window.innerHeight) / 1000;
 

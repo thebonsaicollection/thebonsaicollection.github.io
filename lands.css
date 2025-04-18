@@ -72,8 +72,8 @@ h1 {
 }
 
 .planet {
-    width: 5vh;
-    height: 5vh;
+    width: 4.2vh;
+    height: 4.2vh;
     background-color: rgba(0, 204, 255, 0.8);
     border-radius: 50%;
     position: absolute;
@@ -90,9 +90,9 @@ h1 {
 }
 
 .outer-planet {
-    width: 5vh;
-    height: 5vh;
-    background-color: rgba(255, 0, 0, 0.8); 
+    width: 3vh;
+    height: 3vh;
+    background-color: whitesmoke; 
     border-radius: 50%;
     position: absolute;
     cursor: pointer;

@@ -1,0 +1,99 @@
+body {
+    overflow: hidden;
+    background: linear-gradient(#001f3f, #000033);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+  max-width: 100%;
+  padding: 20px;
+}
+
+.neon-header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+.neon-header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.neon-header nav ul li {
+    display: inline;
+}
+
+.neon-header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.neon-header nav ul li a:hover {
+    color: #ff00ff;
+}
+
+.title-section {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.gallery-card {
+  background-color: #fff;
+  padding: 20px;
+  width: 40vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  top: 20px;
+}
+
+.gallery-card:hover {
+  transform: translateY(-5px);
+}
+
+.gallery-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.gallery-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.view-gallery-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.view-gallery-btn:hover {
+  background-color: #2674a7;
+}
