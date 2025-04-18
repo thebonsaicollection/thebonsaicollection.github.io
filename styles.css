@@ -17,18 +17,21 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #ff00ff, #00ffff);
+    background: radial-gradient(circle, #0c1443, #050c1d, #0f111d);
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: fadeIn 1s ease forwards, fadeOut 3s ease forwards 2s;
+    animation: fadeIn 0.5s ease forwards, fadeOut 1.2s ease forwards 2.5s;
     z-index: 9999;
+    overflow: hidden;
 }
 
 .intro-content {
     text-align: center;
     color: #fff;
     z-index: 1;
+    animation: fadeInText 0.4s ease forwards 0.5s;
+    opacity: 0;
 }
 
 .intro-content h1 {
@@ -58,6 +61,11 @@ body {
     100% { opacity: 1; }
 }
 
+@keyframes fadeInText {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
 @keyframes fadeOut {
     0% { opacity: 1; }
     100% { opacity: 0; }
@@ -85,13 +93,39 @@ body {
 .neon-header nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
-    font-size: 18px;
+    padding: 10px 15px;
+    font-size: 1.2rem;
     transition: color 0.3s ease-in-out;
 }
 
 .neon-header nav ul li a:hover {
     color: #ff00ff;
+}
+
+.important-info {
+    margin-top: 10px;
+    text-align: center; 
+}
+
+.info-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.info-button {
+    background-color: rgba(255, 165, 0, 0.8);
+    color: #000; 
+    border: none;
+    padding: 2vh 5vh;
+    margin: 10px;
+    font-size: 20px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+
+.info-button:hover {
+    background-color: rgba(255, 165, 0, 0.8);
 }
 
 .separator {
@@ -103,7 +137,7 @@ body {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 2.5vh;
+    font-size: 2.8vh;
     color: #fff;
     font-family: 'Exo 2', sans-serif;
     text-transform: uppercase;
@@ -151,7 +185,7 @@ h1 {
     max-height: 100vh;
     border-radius: 8px;
     margin-bottom: 12px;
-    margin-top: 2vh;
+    margin-top: 0
 }
 
 .bot-message {
@@ -163,7 +197,7 @@ h1 {
     margin: 10px 0;
     align-self: flex-start;
     word-wrap: break-word;
-    font-size: 2.2vh;
+    font-size: 2vh;
     max-height: 100vh;
 }
 
@@ -304,8 +338,9 @@ button.category-button:hover {
     .neon-header nav ul li a {
         width: 100vh;
         padding: 5px 5px; 
-        font-size: 12px; 
+        font-size: 14px;
     }
+
     .container {
         width: 90%;
         height: 120vh;
@@ -324,9 +359,10 @@ button.category-button:hover {
 
     .neon-header nav ul li a {
         width: 100vh;
-        padding: 5px 5px;
+        padding: 5px 5px; 
         font-size: 12px;
     }
+
     .container {
         width: 90%;
         height: 120vh;

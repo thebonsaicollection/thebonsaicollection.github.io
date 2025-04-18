@@ -1,15 +1,16 @@
+<!-- galleries.html -->
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="detalles_land.css">
-    <title>Detalles de Land - TheBonsaiCollection</title>
-    </head>
-    <body>
-        <header class="neon-header">
-        <nav>
-            <ul>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerías de NFTs</title>
+  <link rel="stylesheet" href="galleries.css">
+</head>
+<body>
+  <header class="neon-header">
+    <nav>
+        <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><span class="separator">-</span></li>
                 <li><a href="lands.html">Lands</a></li>
@@ -23,16 +24,23 @@
                 <li><a href="https://opensea.io/TheBonsaiCollection" target="_blank">MarketPlace</a></li>
                 <li><span class="separator">-</span></li>
                 <li><a href="https://linktr.ee/TheBonsaiCollection" target="_blank">About</a></li>
-            </ul>
-        </nav>
-    </header>
+        </ul>
+    </nav>
+</header>
 
-
-
-    <div class="details-container" id="details-container">
-        <button id="go-back" onclick="goBack()">Volver</button>
+  <div class="container">
+    <h1 class="title-section">NFT Galleries</h1>
+    <div class="galleries-container">
+      <div class="gallery-card">
+        <h3>Open Lands</h3>
+        <p>Select one to access</p>
+        <a href="ml1gallery.html" class="view-gallery-btn">View ML1 Gallery</a>
+        <a href="ml2gallery.html" class="view-gallery-btn">View ML2 Gallery</a>
+      </div>
+      <!-- Other gallery links can be added here as needed -->
     </div>
+  </div>
 
-    <script src="detalles_land.js"></script>
+  <script src="galleries.js"></script>
 </body>
 </html>

@@ -1,0 +1,421 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000033;
+  color: #ffffff;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Pantalla de carga */
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000033;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.loading-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.loading-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.loading-bar {
+  width: 300px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.loading-progress {
+  width: 0%;
+  height: 100%;
+  background-color: #4CAF50;
+  transition: width 0.3s ease-in-out;
+}
+
+.loading-text {
+  font-size: 1.2em;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+/* Contenedor de la galería */
+.gallery-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.gallery-room {
+  position: relative;
+  width: 100%;
+  height: 33.33%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.slot {
+  width: 200px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Controles e información */
+.controls-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 51, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  z-index: 100;
+  display: none;
+}
+
+.controls-overlay h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.controls-overlay ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.controls-overlay li {
+  margin: 10px 0;
+}
+
+kbd {
+  background-color: #333;
+  border-radius: 3px;
+  border: 1px solid #666;
+  padding: 2px 6px;
+  font-family: monospace;
+}
+
+/* Botones y controles */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Controles de audio */
+.audio-controls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 90;
+}
+
+.volume-slider {
+  width: 100px;
+  height: 5px;
+  -webkit-appearance: none;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Ajustes gráficos */
+.graphics-settings {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 90;
+}
+
+select {
+  background-color: rgba(0, 0, 51, 0.8);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Modal de NFT */
+.nft-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 51, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  z-index: 1000;
+  width: 80%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nft-modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  display: flex;
+  gap: 30px;
+}
+
+.nft-image-container {
+  flex: 1;
+  position: relative;
+}
+
+.nft-image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.nft-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.action-button {
+  flex: 1;
+  padding: 15px;
+  font-size: 1.1em;
+}
+
+/* Canvas */
+#gallery-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Overlay para efectos */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 51, 0.3) 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Top Volume Container */
+.top-volume-container {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  background-color: rgba(0, 0, 51, 0.8);
+  border-radius: 10px;
+  z-index: 90;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .modal-content {
+    flex-direction: column;
+  }
+  
+  .controls-overlay {
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  
+  .top-volume-container {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.navigation-buttons {
+  position: fixed;
+  top: 20px;
+  right: 44%;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.nav-button {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.nav-button i {
+  font-size: 18px;
+}
+
+.nft-interaction-buttons {
+  position: fixed;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.nft-interaction-buttons.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.interaction-button {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.interaction-button:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.interaction-button i {
+  font-size: 18px;
+}
+
+.interaction-button#view-nft {
+  background: rgba(52, 152, 219, 0.9);
+  color: white;
+}
+
+.interaction-button#buy-nft {
+  background: rgba(46, 204, 113, 0.9);
+  color: white;
+}
+
+.interaction-button#rent-space {
+  background: rgba(155, 89, 182, 0.9);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navigation-buttons {
+    top: 10px;
+    right: 10px;
+  }
+
+  .nav-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .nft-interaction-buttons {
+    bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .interaction-button {
+    width: 200px;
+    justify-content: center;
+  }
+}

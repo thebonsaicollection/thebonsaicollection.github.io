@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galería Virtual 3D de NFTs - Main Land 1. Explora y compra NFTs en un espacio virtual inmersivo.">
+  <meta name="keywords" content="NFT, galería virtual, arte digital, blockchain, realidad virtual">
+  <meta property="og:title" content="Galería Virtual 3D - Main Land 1">
+  <meta property="og:description" content="Explora nuestra galería virtual 3D de NFTs y descubre arte digital único.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#000033">
+  
+  <title>Galería Virtual TBC</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJESURBVFhH7ZZNaBNBFMf/m93EJk1rP7QFP1ArtFLBiwh6Eq0HBUEPelFvghfx4kHwA/SgICiIiCAIghdFj4IXL4og6EVBKYhFxIOgFawWqW2atNns+GaSzWyy2WTjYQ/7hzc7M++9N7/ZmXkzK4RX+Y8RiUQgSRJkWZbPuru70dHRAVEU5XOxWMTMzAzy+Tx0XZfbent70dfXh0gkQiNtCoUCpqam5DYej8vvhJqmYXx8HMlkEoZhyG273Y6BgQEMDg7KZppmhgbG0M6nZb7kH40xmazwe12y3aVaDSKoaEhiQihcDiMvr4+2Gw22VYUBel0GtPT03L0NpsN/f39CAQCcDgccp9cLofJyUlks1m5D+lH+hKbzYbh4WG43W5ks1nMzs5ifX0dTqcT4XAYPp8PkiTh8PAQCwsLWF5exsHBgRwVn8+HWCyGYDAIp9OJ/f19zM3NYW1tTR6AQGySk5MTrK6uYnFxETs7O9jb25P7kOc0Go1idXUVKysrOD09lQcgNhsEeZFEQNM0bG5uYnt7G8fHx/JgxWIRW1tb2NzcxNHRkWwjg5FByCAkMhqxoihyv7+CXjp/E3rpXMcvnb8JvXSu45fO34ReOtfxS+dvQi+d6/il8zfBLJ0tLS1obm5GU1OT3EZXN7FRiI1CbBRio3i9XrS2tsqr5nfQS2ePx4NAIACv1yu3kSQjNgqxUYiN4vf70d7eDrfbLbd9B710DgaDaGtrkxc1sVGIjUJsFGKjkNVPVr/b7ZbbvgJz6WwYOl69FwAAAABJRU5ErkJggg==">
+  <link rel="stylesheet" href="ml1gallery.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <script async src="https://unpkg.com/es-module-shims@1.7.3/dist/es-module-shims.js"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/",
+        "gsap": "https://unpkg.com/gsap@3.12.0/dist/gsap.js"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="loading-screen" aria-live="polite">
+    <div class="loading-content">
+      <h1>Galería Virtual TBC</h1>
+      <div class="loading-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="loading-progress"></div>
+      </div>
+      <p class="loading-text">Cargando experiencia virtual...</p>
+    </div>
+  </div>
+
+  <div class="gallery-container">
+    <div id="room-1" class="gallery-room">
+      <div class="slot" id="slot-0"></div>
+      <div class="slot" id="slot-1"></div>
+      <div class="slot" id="slot-2"></div>
+    </div>
+    <div id="room-2" class="gallery-room">
+      <div class="slot" id="slot-3"></div>
+      <div class="slot" id="slot-4"></div>
+      <div class="slot" id="slot-5"></div>
+    </div>
+    <div id="room-3" class="gallery-room">
+      <div class="slot" id="slot-6"></div>
+      <div class="slot" id="slot-7"></div>
+      <div class="slot" id="slot-8"></div>
+    </div>
+  </div>
+
+  <div class="overlay"></div>
+
+  <div class="top-volume-container" aria-label="NFTs más populares">
+    <!-- Los NFTs de mayor volumen se cargarán aquí dinámicamente -->
+  </div>
+
+  <div id="controls-info" class="controls-overlay" aria-label="Controles de navegación">
+    <h2>Controles</h2>
+    <ul>
+      <li><kbd>W</kbd>/<kbd>S</kbd>/<kbd>A</kbd>/<kbd>D</kbd> o Flechas - Movimiento</li>
+      <li>Mouse - Mirar alrededor</li>
+      <li>Click - Interactuar con NFTs</li>
+      <li><kbd>Q</kbd>/<kbd>E</kbd> - Rotar cámara</li>
+      <li><kbd>Space</kbd> - Subir</li>
+      <li><kbd>Shift</kbd> - Bajar</li>
+      <li><kbd>ESC</kbd> - Menú</li>
+    </ul>
+    <button id="start-experience" aria-label="Comenzar experiencia virtual">Entrar a la Galería</button>
+  </div>
+
+  <div class="audio-controls">
+    <button id="toggle-audio" aria-label="Alternar audio">
+      <i class="fas fa-volume-up"></i>
+    </button>
+    <input type="range" class="volume-slider" min="0" max="100" value="80" aria-label="Control de volumen">
+  </div>
+
+  <div class="graphics-settings">
+    <select id="quality-settings" aria-label="Ajustes de calidad gráfica">
+      <option value="low">Calidad Baja</option>
+      <option value="medium">Calidad Media</option>
+      <option value="high" selected>Calidad Alta</option>
+    </select>
+  </div>
+
+  <div id="nft-details" class="nft-modal hidden" aria-modal="true" role="dialog">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Cerrar detalles del NFT">×</button>
+      <div class="nft-image-container">
+        <img id="nft-image" src="" alt="NFT" loading="lazy">
+        <div class="loading-indicator"></div>
+      </div>
+      <div class="nft-info" id="nft-info">
+        <h2 id="nft-title"></h2>
+        <p id="nft-description"></p>
+        <p id="nft-volume"></p>
+        <div class="button-group">
+          <button class="action-button" id="buy-nft" aria-label="Comprar NFT">
+            <i class="fas fa-shopping-cart"></i> Comprar NFT
+          </button>
+          <button class="action-button" id="rent-space" aria-label="Alquilar espacio">
+            <i class="fas fa-key"></i> Alquilar Espacio
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="gallery-canvas" aria-label="Galería Virtual 3D"></canvas>
+
+  <div class="navigation-buttons">
+    <a href="index.html" class="nav-button">
+      <i class="fas fa-home"></i>
+      <span>Inicio</span>
+    </a>
+    <a href="lands.html" class="nav-button">
+      <i class="fas fa-globe"></i>
+      <span>Lands</span>
+    </a>
+  </div>
+
+  <div class="nft-interaction-buttons">
+    <button class="interaction-button" id="view-nft" aria-label="Ver detalles del NFT">
+      <i class="fas fa-eye"></i>
+      <span>Ver Detalles</span>
+    </button>
+    <button class="interaction-button" id="buy-nft" aria-label="Comprar NFT">
+      <i class="fas fa-shopping-cart"></i>
+      <span>Comprar</span>
+    </button>
+    <button class="interaction-button" id="rent-space" aria-label="Alquilar espacio">
+      <i class="fas fa-key"></i>
+      <span>Alquilar</span>
+    </button>
+  </div>
+
+  <script type="module" src="gallery3D.js"></script>
+  <script src="ml1gallery.js"></script>
+</body>
+</html>
