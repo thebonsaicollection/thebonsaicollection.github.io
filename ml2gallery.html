@@ -2,17 +2,38 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Galería ML2</title>
+  <title>Muses – Main Land 2</title>
   <link rel="stylesheet" href="ml2gallery.css">
 </head>
 <body>
+
+  <!-- UI Principal -->
+  <div id="topbar">
+    <div id="info">
+      <h1>Muses – Main Land 2</h1>
+      <p id="island-time">Hora de la isla: --:--:--</p>
+    </div>
+
+    <div id="stats">
+      <span>⚡ Energía: <strong>87%</strong></span>
+      <span>💧 Agua: <strong>65%</strong></span>
+      <span>🌬️ Oxígeno: <strong>91%</strong></span>
+      <span>🪙 TBC Coins: <strong>4,520</strong></span>
+    </div>
+
+    <div id="navbar">
+      <button onclick="location.href='index.html'">Inicio</button>
+      <button onclick="location.href='lands.html'">Lands</button>
+      <button onclick="location.href='galerias.html'">Galerías</button>
+    </div>
+  </div>
+
+  <!-- Escena Spline -->
   <div id="spline-container">
     <iframe 
       id="spline-scene"
       src="https://my.spline.design/untitled-P3hgBK8OsVg06finHKd5CUtc/" 
-      frameborder="0" 
-      width="100%" 
-      height="100%">
+      frameborder="0">
     </iframe>
   </div>
 

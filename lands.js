@@ -81,7 +81,7 @@ function viewDetails() {
     const popupTitle = document.getElementById('popup-title');
     const landName = popupTitle.textContent;
 
-    const detailsPage = 'detalles_land.html';
+    const detailsPage = 'galleries.html';
 
     window.location.href = `${detailsPage}?Land=${encodeURIComponent(landName)}`;
 }
